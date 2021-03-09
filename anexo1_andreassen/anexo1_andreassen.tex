@@ -1,0 +1,191 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{cancel}
+\usepackage{makeidx}
+\usepackage{graphicx}
+%\usepackage{times}
+%\usepackage{lmodern}
+%\usepackage{kpfonts}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{autonum}
+\usepackage{comment}
+\usepackage{braket}
+\usepackage{amsthm}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+
+\usetikzlibrary{babel}
+
+\newcommand{\I}{\text{i}}
+
+\title{Anexo 1}
+\author{Erwin Renzo Franco Diaz}
+\date{}
+
+\begin{document}
+\maketitle
+
+
+
+\section{Solución de la ESIT}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+
+\draw[<->] (8.5, 0) node[anchor = west] {$x$}-- (0,0) -- (0,5) node[anchor = south] {$V(x)$};
+
+\draw[blue, line width = 0.5mm] (0,0) -- (0, 4.5);
+\draw[blue, line width = 0.5mm] (-0.025,0) -- (2.025,0);
+\draw[blue, line width = 0.5mm] (2,0) -- (2,3.025);
+\draw[blue, line width = 0.5mm] (2,3) -- (4.525, 3);
+\draw[blue, line width = 0.5mm] (4.5, 3) -- (4.5,-0.025);
+\draw[blue, line width = 0.5mm] (4.5,0) -- (8,0);
+
+\end{tikzpicture}
+\end{figure}
+
+\begin{equation}
+	-\frac{1}{2m}\frac{d^2\phi}{dx^2} + V(x)\phi = E\phi = \frac{p^2}{2m} 
+\end{equation}
+
+\begin{equation}
+	\frac{d^2\phi}{dx^2}= \left(2mV(x) - p^2 \right)\phi
+\end{equation}
+
+\subsection{FV}
+
+\begin{equation}
+	\frac{d^2\phi_{\text{FV}}}{dx^2} = -p^2\phi_{\text{FV}}
+\end{equation}
+
+\begin{equation}
+	\phi^{\text{FV}}(x) = A\sin\left(px\right) + B\cos\left(px\right)
+\end{equation}
+Como se tiene una barrera infinita en $x=0$
+\begin{equation}
+	\phi_{\text{FV}}(0) = B = 0
+\end{equation}
+
+\begin{equation}
+	\phi^{\text{FV}}(x) = A\sin\left(px\right)
+\end{equation}
+
+\subsection{B}
+
+\begin{equation}
+	\frac{d^2\phi}{dx^2}= \left(2mV_0 - p^2 \right)\phi
+\end{equation}
+Definimos 
+\begin{equation}
+	\kappa^2 = 2mV_0 - p^2
+\end{equation}
+con $k > 0$
+
+\begin{equation}
+	\phi^{\text{B}}(x) = Ce^{\kappa x} + De^{-\kappa x}
+\end{equation}
+
+\subsection{R}
+
+\begin{equation}
+	\frac{d^2\phi_{\text{R}}}{dx^2} = -p^2\phi_{\text{R}}
+\end{equation}
+
+\begin{equation}
+	\phi^{\text{R}}(x) = Ee^{\I px} + Fe^{-\I px}
+\end{equation}
+
+\subsection{Continuidad de $\phi(x)$}
+
+\subsubsection{$x =a$}
+
+Continuidad de $\phi(x)$ en $x = a$
+\begin{gather}
+	\phi^{\text{FV}}(a) = \phi^{\text{B}}(a) \\ \label{eq1}
+	A\sin\left(pa\right) = Ce^{\kappa a} + De^{-\kappa a}
+\end{gather}
+Continuidad de $\phi'(x)$ en $x = a$
+\begin{gather}
+	\frac{d\phi^{\text{FV}}}{dx}(a) = \frac{d\phi^{\text{B}}}{dx}(a) \\ \label{eq2}	A\cos\left(pa\right) = \frac{\kappa}{p} \left( Ce^{\kappa a} - De^{-\kappa a} \right)
+\end{gather}
+%Dividiendo \eqref{eq1} entre \eqref{eq2} para eliminar $A$
+%\begin{gather}
+%	\tan\left(pa\right) = \frac{p}{\kappa}\left( \frac{Ce^{\kappa a} + De^{-\kappa a}}{ Ce^{\kappa a} - De^{-\kappa a} }\right) \\		\left(\kappa\tan\left(pa\right)-p\right)e^{\kappa a}C = -\left(\kappa\tan\left(pa\right) + p\right)e^{-\kappa a}D \\ \label{eq3}
+%C = -\left(\frac{\kappa\tan\left(pa\right)-p}{\kappa\tan\left(pa\right) + p}\right) e^{-2\kappa a}D
+%\end{gather}
+\eqref{eq1} y \eqref{eq2} forman un sistema de ecuaciones lineales a partir del cual se puede obtener $C$ y $D$ en función $A$
+
+\begin{alignat}{3}
+&e^{\kappa a}C + &&e^{-\kappa a}D &&= A\sin\left(pa\right) \\
+&e^{\kappa a}C - &&e^{-\kappa a}D &&= \frac{p}{\kappa} A\cos\left(pa\right)
+\end{alignat}
+
+\begin{align}
+C &= \frac{e^{-\kappa a}}{2}A\left(\sin\left(pa\right) + \frac{p}{\kappa} \cos\left(pa\right)\right)\\
+D &= \frac{e^{\kappa a}}{2}A\left(\sin\left(pa\right) - \frac{p}{\kappa} \cos\left(pa\right) \right)
+\end{align}
+
+\subsubsection{$x = b$}
+
+Continuidad de $\phi(x)$ en $x = b$
+\begin{gather}
+	\phi^{\text{B}}(b) = \phi^{\text{R}}(b) \\ \label{eq4}
+	Ce^{\kappa b} + De^{-\kappa b} = Ee^{\I pb} + Fe^{-\I pb}
+\end{gather}
+Continuidad de $\phi'(x)$ en $x = b$
+\begin{gather}
+	\frac{d\phi^{\text{B}}}{dx}(b) = \frac{d\phi^{\text{R}}}{dx}(b) \\ \label{eq5}
+	Ce^{\kappa b} - De^{-\kappa b} = \I\frac{p}{\kappa} \left(Ee^{\I pb} - Fe^{-\I pb}\right)
+\end{gather}
+\eqref{eq4} y \eqref{eq5} forman un sistema de ecuaciones lineales a partir del cual se puede obtener $E$ y $F$ en función de $C$ y $D$ y por lo tanto en función de $A$
+\begin{alignat}{3}
+    &e^{\I pb}E + &&e^{-\I pb}F &&= Ce^{\kappa b} + De^{-\kappa b} \\
+	&e^{\I pb}E - &&e^{-\I pb}F  &&= -\I\frac{\kappa}{p} \left(Ce^{\kappa b} - De^{-\kappa b}\right)
+\end{alignat}
+
+\begin{gather}
+    E = \frac{e^{-\I bp}}{2}\left(\left(1 - \I \frac{\kappa}{p}\right)Ce^{b\kappa} + \left(1 + \I \frac{\kappa}{p}\right)De^{-b\kappa}\right)\\
+    F = \frac{e^{\I bp}}{2}\left(\left(1 + \I \frac{\kappa}{p}\right)Ce^{b\kappa} + \left(1 - \I \frac{\kappa}{p}\right)De^{-b\kappa}\right)
+\end{gather}
+Como todas las constantes contienen un factor de $A$, esta puede ser absorbida en la constante de normalización por lo que podemos hacerla igual a 1.
+\begin{gather}
+	C\left(p\right) = \frac{e^{-\kappa a}}{2}\left(\sin\left(pa\right) + \frac{p}{\kappa} \cos\left(pa\right)\right)\\
+	D\left(p\right)  = \frac{e^{\kappa a}}{2}\left(\sin\left(pa\right) - \frac{p}{\kappa} \cos\left(pa\right) \right) \\
+	E\left(p\right)  = \frac{e^{-\I bp}}{2}\left(\left(1 - \I \frac{\kappa}{p}\right)C(p)e^{b\kappa} + \left(1 + \I \frac{\kappa}{p}\right)D(p)e^{-b\kappa}\right)\\
+	F\left(p\right)  = \frac{e^{\I bp}}{2}\left(\left(1 + \I \frac{\kappa}{p}\right)C(p)e^{b\kappa} + \left(1 - \I \frac{\kappa}{p}\right)D(p)e^{-b\kappa}\right)
+\end{gather}
+%Notamos que $F(p) = E^{*}(p)$
+
+\emph{andreesen define las constantes de manera distinta}
+
+\subsection{Normalización}
+Como los autovalores de momento $p$ son continuos
+\begin{equation}
+	\int_{-\infty}^{+\infty} dx \phi^{*}_{p'}(x) \phi_p(x) = N\left(p\right) \delta(p-p')
+\end{equation}
+
+\begin{equation}
+\int_{-\infty}^{+\infty} dx \phi^{*}_{p'}(x) \phi_p(x) = \int_0^a dx \left( \phi^{\text{FV}}_{p'}(x) \right)^* \phi_p^{\text{FV}}(x) + \int_a^b dx \left( \phi^{\text{B}}_{p'}(x) \right)^* \phi_p^{\text{B}}(x) + \int_b^{+\infty} dx \left( \phi^{\text{R}}_{p'}(x) \right)^* \phi^{\text{R}}_p(x) 
+\end{equation}
+Las dos primeras integrales dan un valor finito, por lo que la delta de Dirac solo puede resultar de la última integral en la región R.
+
+\begin{align}
+    \int_b^{+\infty} dx \left( \phi^{\text{R}}_{p'}(x) \right)^* \phi^{\text{R}}_p(x)  &= \int_b^{+\infty} dx \left( E \left(p'\right) e^{\I p'x} + F \left(p'\right) e^{-\I p'x} \right)^{*} \left( E \left(p\right) e^{\I px} + F \left(p\right) e^{-\I px} \right) \\
+	&= \int_b^{+\infty} dx \left( E^{*} \left(p'\right) e^{-\I p'x} + F^{*} \left(p'\right) e^{\I p'x} \right) \left( E \left(p\right) e^{\I px} + F \left(p\right) e^{-\I px} \right) \\
+	&= \int_b^{+\infty} dx \left( E^{*} \left(p'\right) E\left(p\right)e^{\I \left(p - p'\right)x} + F^{*} \left(p'\right) F\left(p\right)e^{-\I \left(p - p'\right)x} + E^{*} \left(p'\right) F\left(p\right)e^{-\I \left(p + p'\right)x} + F^{*} \left(p'\right) E\left(p\right)e^{\I \left(p + p'\right)x} \right)
+\end{align}
+
+\subsection{Cálculo de $\Gamma$ usando los Autovalores de Energía}
+
+\end{document}

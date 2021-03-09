@@ -1,0 +1,114 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{tikz}
+%\usepackage{lmodern}
+%\usepackage{kpfonts}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{bm}
+%\usepackage{cite}
+\usepackage[
+backend = biber,
+bibstyle = apa,
+citestyle = numeric, 
+sorting = none
+]{biblatex}
+\usepackage{hyperref}
+\usepackage{cleveref}
+%\usepackage{autonum}
+%\usepackage{comment}
+\usepackage{braket}
+\usepackage{amsthm}
+\usepackage{csquotes}
+\usepackage{physics}
+\usepackage{fancyhdr}
+%\usepackage{newtxtext, newtxmath}
+\usepackage{enumitem}
+\usepackage{siunitx}
+
+%\graphicspath{{FIGURAS/}}
+\addbibresource{falso_vacio.bib}
+
+\usetikzlibrary{babel}
+
+\DeclareFieldFormat{labelnumberwidth}{\mkbibbrackets{#1}}
+
+\defbibenvironment{bibliography}
+{\list
+	{\printtext[labelnumberwidth]{%
+			\printfield{labelprefix}%
+			\printfield{labelnumber}}}
+	{\setlength{\labelwidth}{\labelnumberwidth}%
+		\setlength{\leftmargin}{\labelwidth}%
+		\setlength{\labelsep}{\biblabelsep}%
+		\addtolength{\leftmargin}{\labelsep}%
+		\setlength{\itemsep}{\bibitemsep}%
+		\setlength{\parsep}{\bibparsep}}%
+	\renewcommand*{\makelabel}[1]{\hss##1}}
+{\endlist}
+{\item}
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+
+%\tcbset{colback = white, colframe = red}
+
+\allowdisplaybreaks
+\numberwithin{equation}{section}
+
+%arregla un error con �
+\DeclareUnicodeCharacter{0301}{\'{e}}
+
+\theoremstyle{definition}
+\newtheorem*{sol}{Solución}
+
+%\tcbuselibrary{theorems}
+%\tcbuselibrary{skins}
+
+%\tcbset{colback = white, colframe = red}
+
+\setlist[itemize]{leftmargin=*}
+\setlist[enumerate]{leftmargin=*}
+
+\addbibresource{falso_vacio.bib}
+
+\title{Notas Falso Vacío} 
+\author{Erwin Renzo Franco Diaz}
+\date{2020-II}
+
+\begin{document}
+
+\maketitle
+
+\section{Motivación}
+
+\begin{itemize}
+
+\item El potencial de Higgs recibe correcciones cuanticas debido a todos los campos con los que se acopla. Esto hace que su constante de acoplamiento se vuelva negativa alrededor de los $\SI{e11}{\giga\electronvolt}$, volviendo inestable al vacio electrodebil. Los calculos mas recientes sugieren que el tiempo de vida del vacio electrodebil es mayor a la edad del universo, sin embargo, de no ser así podría sugerir nueva fisica mas alla del Modelo Estandar \cite{Ai:2019dqr}.
+
+\item El decaimiento del falso vacio se ve afectado por efectos gravitacionles. Por ejemplo, los agujeros negros pueden actuar como centros de nucleacion incrementando la tasa de decaimiento \cite{Ai:2019dqr}.
+
+\item El decaimiento del falso vacio tiene muchas otras aplicaciones en estudios fenomenologicos. Un ejemplo importante es la transicion de fase electrodebil durante el enfriamiento del Universo luego del Big Bang. En los modelos mas alla del Modelo Estandar, esta transicion es de primer orden y pde llevar a la nucleacion de burbujas que al colisionar y fusionarse pueden producir ondas gravitacionales, así como jugar un papel fundamental al momento de explicar la asimetria entre materia y antimateria \cite{Ai:2019dqr}. 
+
+\item Aplicación importante del tunelamiento al proceso de vaporización del agua sobrecalentada  \cite{kleinert2009path}. 
+
+\end{itemize}
+
+\section{Conclusiones}
+
+\begin{itemize}
+
+\item  Si bien hemos podido calcular la tasa de decaimiento del falso vacío para el campo escalar haciendo uso de la integral de camino euclideana y la aproximación de punto estacionario, tal como lo propusieron Callan y Coleman, aún quedan ciertas ambigüedades conceptuales  ser resueltas. Por ejemplo, ¿como entender el tunelamiento, un proceso dinámico, a partir de una ecuación estática? ¿Cómo puede tener la energía del estado metaestable una parte imaginaria sin estar en contradicción con la hermiticidad? ¿Es posible entender el tunelamiento usando la integral de camino en tiempo real? \cite{Ai:2019dqr}
+
+\printbibliography
+\addcontentsline{toc}{chapter}{Bibliografía}
+
+\end{itemize}
+
+\end{document}

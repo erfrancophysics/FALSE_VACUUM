@@ -1,0 +1,36 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Resumen}{\es@scroman {i}}{Doc-Start}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Agradecmientos}{\es@scroman {ii}}{Doc-Start}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\IeC {\'I}ndice general}{\es@scroman {ii}}{Doc-Start}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\IeC {\'I}ndice de figuras}{\es@scroman {iii}}{chapter*.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Motivaci\IeC {\'o}n}{1}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Planteamiento del problema}{1}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Decaimiento del falso vac\IeC {\'\i }o en la Mec\IeC {\'a}nica Cu\IeC {\'a}ntica}{3}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Tasa de decaimiento}{3}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Integral de camino euclideana}{5}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Aproximaci\IeC {\'o}n de punto estacionario}{8}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Bounce}{11}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Modo zero}{12}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Modo negativo}{12}{section.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Contribuci\IeC {\'o}n multibounce}{12}{section.2.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Conclusiones}{13}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{14}{chapter*.3}

@@ -1,0 +1,421 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{gamow1928quantum}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=75490b33cc945bf2b8065e32cf03fc58}{%
+           family={Gamow},
+           familyi={G\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{75490b33cc945bf2b8065e32cf03fc58}
+      \strng{fullhash}{75490b33cc945bf2b8065e32cf03fc58}
+      \strng{bibnamehash}{75490b33cc945bf2b8065e32cf03fc58}
+      \strng{authorbibnamehash}{75490b33cc945bf2b8065e32cf03fc58}
+      \strng{authornamehash}{75490b33cc945bf2b8065e32cf03fc58}
+      \strng{authorfullhash}{75490b33cc945bf2b8065e32cf03fc58}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{number}{3082}
+      \field{title}{The quantum theory of nuclear disintegration}
+      \field{volume}{122}
+      \field{year}{1928}
+      \field{pages}{805\bibrangedash 806}
+      \range{pages}{2}
+    \endentry
+    \entry{Ai:2019dqr}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=5244c9b17f3e24650df257b0604dcbfa}{%
+           family={Ai},
+           familyi={A\bibinitperiod},
+           given={Wen-Yuan},
+           giveni={W\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{fullhash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{bibnamehash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{authorbibnamehash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{authornamehash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{authorfullhash}{5244c9b17f3e24650df257b0604dcbfa}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Aspects of false vacuum decay}}
+      \field{type}{phdthesis}
+      \field{year}{2019}
+    \endentry
+    \entry{andreassen2017precision}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=19eb4598c442052496e59507827ef2b2}{%
+           family={Andreassen},
+           familyi={A\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a562eb10ac2870de64b3956df2eb1896}{%
+           family={Farhi},
+           familyi={F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d4f2e14116194314c993a3eaaca193dc}{%
+           family={Frost},
+           familyi={F\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3179169c1aced94be226c750220562b1}{%
+           family={Schwartz},
+           familyi={S\bibinitperiod},
+           given={Matthew\bibnamedelima D},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{5a9bd8c1e56a632b8e6e9feb5af4c8e4}
+      \strng{fullhash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
+      \strng{bibnamehash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
+      \strng{authorbibnamehash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
+      \strng{authornamehash}{5a9bd8c1e56a632b8e6e9feb5af4c8e4}
+      \strng{authorfullhash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review D}
+      \field{number}{8}
+      \field{title}{Precision decay rate calculations in quantum field theory}
+      \field{volume}{95}
+      \field{year}{2017}
+      \field{pages}{085011}
+      \range{pages}{1}
+    \endentry
+    \entry{weinberg2012classical}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=834e49d190d73f6e582eefbc082a837e}{%
+           family={Weinberg},
+           familyi={W\bibinitperiod},
+           given={Erick\bibnamedelima J},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{834e49d190d73f6e582eefbc082a837e}
+      \strng{fullhash}{834e49d190d73f6e582eefbc082a837e}
+      \strng{bibnamehash}{834e49d190d73f6e582eefbc082a837e}
+      \strng{authorbibnamehash}{834e49d190d73f6e582eefbc082a837e}
+      \strng{authornamehash}{834e49d190d73f6e582eefbc082a837e}
+      \strng{authorfullhash}{834e49d190d73f6e582eefbc082a837e}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Classical solutions in quantum field theory: Solitons and Instantons in High Energy Physics}
+      \field{year}{2012}
+    \endentry
+    \entry{paranjape2017theory}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=06528b4cf51595378ecb7bfedc0efa8b}{%
+           family={Paranjape},
+           familyi={P\bibinitperiod},
+           given={Manu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{06528b4cf51595378ecb7bfedc0efa8b}
+      \strng{fullhash}{06528b4cf51595378ecb7bfedc0efa8b}
+      \strng{bibnamehash}{06528b4cf51595378ecb7bfedc0efa8b}
+      \strng{authorbibnamehash}{06528b4cf51595378ecb7bfedc0efa8b}
+      \strng{authornamehash}{06528b4cf51595378ecb7bfedc0efa8b}
+      \strng{authorfullhash}{06528b4cf51595378ecb7bfedc0efa8b}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The theory and applications of instanton calculations}
+      \field{year}{2017}
+    \endentry
+    \entry{kleinert2009path}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=f0a1b7e97eb45d3f029bfa9be29a49ed}{%
+           family={Kleinert},
+           familyi={K\bibinitperiod},
+           given={Hagen},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {World scientific}%
+      }
+      \strng{namehash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
+      \strng{fullhash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
+      \strng{bibnamehash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
+      \strng{authorbibnamehash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
+      \strng{authornamehash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
+      \strng{authorfullhash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Path integrals in quantum mechanics, statistics, polymer physics, and financial markets}
+      \field{year}{2009}
+    \endentry
+    \entry{Masoumi:2015psa}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=7e9c32b413cf8eca230fea08a7856790}{%
+           family={Masoumi},
+           familyi={M\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7e9c32b413cf8eca230fea08a7856790}
+      \strng{fullhash}{7e9c32b413cf8eca230fea08a7856790}
+      \strng{bibnamehash}{7e9c32b413cf8eca230fea08a7856790}
+      \strng{authorbibnamehash}{7e9c32b413cf8eca230fea08a7856790}
+      \strng{authornamehash}{7e9c32b413cf8eca230fea08a7856790}
+      \strng{authorfullhash}{7e9c32b413cf8eca230fea08a7856790}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{title}{{Topics in vacuum decay}}
+      \field{type}{phdthesis}
+      \field{year}{2013}
+      \verb{eprint}
+      \verb 1505.06397
+      \endverb
+    \endentry
+    \entry{coleman1977fate}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=482d8709754f85ef0a09f447888369c7}{%
+           family={Coleman},
+           familyi={C\bibinitperiod},
+           given={Sidney},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{482d8709754f85ef0a09f447888369c7}
+      \strng{fullhash}{482d8709754f85ef0a09f447888369c7}
+      \strng{bibnamehash}{482d8709754f85ef0a09f447888369c7}
+      \strng{authorbibnamehash}{482d8709754f85ef0a09f447888369c7}
+      \strng{authornamehash}{482d8709754f85ef0a09f447888369c7}
+      \strng{authorfullhash}{482d8709754f85ef0a09f447888369c7}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review D}
+      \field{number}{10}
+      \field{title}{Fate of the false vacuum: Semiclassical theory}
+      \field{volume}{15}
+      \field{year}{1977}
+      \field{pages}{2929}
+      \range{pages}{1}
+    \endentry
+    \entry{callan1977fate}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=3edadbe556a3183211f991deda5520ec}{%
+           family={Callan\bibnamedelima Jr},
+           familyi={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Curtis\bibnamedelima G},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=482d8709754f85ef0a09f447888369c7}{%
+           family={Coleman},
+           familyi={C\bibinitperiod},
+           given={Sidney},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{60c196298bd66a014a57d0c5b1dd26e0}
+      \strng{fullhash}{60c196298bd66a014a57d0c5b1dd26e0}
+      \strng{bibnamehash}{60c196298bd66a014a57d0c5b1dd26e0}
+      \strng{authorbibnamehash}{60c196298bd66a014a57d0c5b1dd26e0}
+      \strng{authornamehash}{60c196298bd66a014a57d0c5b1dd26e0}
+      \strng{authorfullhash}{60c196298bd66a014a57d0c5b1dd26e0}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review D}
+      \field{number}{6}
+      \field{title}{Fate of the false vacuum. II. First quantum corrections}
+      \field{volume}{16}
+      \field{year}{1977}
+      \field{pages}{1762}
+      \range{pages}{1}
+    \endentry
+    \entry{feynman2010quantum}{book}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=01a5bcd4c7f7ee6bbc796dc875763f26}{%
+           family={Feynman},
+           familyi={F\bibinitperiod},
+           given={Richard\bibnamedelima P},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=888a36daf805abc9413876afac9f780e}{%
+           family={Hibbs},
+           familyi={H\bibinitperiod},
+           given={Albert\bibnamedelima R},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a725e91adee874c9f62348e70613cc36}{%
+           family={Styer},
+           familyi={S\bibinitperiod},
+           given={Daniel\bibnamedelima F},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Courier Corporation}%
+      }
+      \strng{namehash}{257888b7cf1dd98859fb387e87e745f1}
+      \strng{fullhash}{b06e378c2e75d98675eae04150562b9b}
+      \strng{bibnamehash}{b06e378c2e75d98675eae04150562b9b}
+      \strng{authorbibnamehash}{b06e378c2e75d98675eae04150562b9b}
+      \strng{authornamehash}{257888b7cf1dd98859fb387e87e745f1}
+      \strng{authorfullhash}{b06e378c2e75d98675eae04150562b9b}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quantum mechanics and path integrals}
+      \field{year}{2010}
+    \endentry
+    \entry{das2006field}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2bc3fb1446b01bc264bb7e1399ba9021}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific Publishing Company}%
+      }
+      \strng{namehash}{2bc3fb1446b01bc264bb7e1399ba9021}
+      \strng{fullhash}{2bc3fb1446b01bc264bb7e1399ba9021}
+      \strng{bibnamehash}{2bc3fb1446b01bc264bb7e1399ba9021}
+      \strng{authorbibnamehash}{2bc3fb1446b01bc264bb7e1399ba9021}
+      \strng{authornamehash}{2bc3fb1446b01bc264bb7e1399ba9021}
+      \strng{authorfullhash}{2bc3fb1446b01bc264bb7e1399ba9021}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{9789814477680}
+      \field{series}{World Scientific Lecture Notes In Physics}
+      \field{title}{Field Theory: A Path Integral Approach}
+      \field{year}{2006}
+    \endentry
+    \entry{rubakov2009classical}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=61b7580d70058c032f02ed6067cc3483}{%
+           family={Rubakov},
+           familyi={R\bibinitperiod},
+           given={Valery},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{61b7580d70058c032f02ed6067cc3483}
+      \strng{fullhash}{61b7580d70058c032f02ed6067cc3483}
+      \strng{bibnamehash}{61b7580d70058c032f02ed6067cc3483}
+      \strng{authorbibnamehash}{61b7580d70058c032f02ed6067cc3483}
+      \strng{authornamehash}{61b7580d70058c032f02ed6067cc3483}
+      \strng{authorfullhash}{61b7580d70058c032f02ed6067cc3483}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Classical theory of gauge fields}
+      \field{year}{2009}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

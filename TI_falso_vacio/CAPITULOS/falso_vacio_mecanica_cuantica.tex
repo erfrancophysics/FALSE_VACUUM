@@ -1,0 +1,315 @@
+\chapter{Decaimiento del falso vacío en la Mecánica Cuántica} 
+
+%\section{Tunelamiento y aproximación WKB}
+
+%La tasa de decaimiento $\Gamma$ es proporcional al coeficiente de transmisión a través de la barrera $T$. Para un potencial cualquiera es posible obtener $T$ de 
+%\begin{equation}\label{eq:gamma}
+%	\Gamma = A e^{-B/\hbar} \qty(1 + \order{\hbar})
+%\end{equation}
+
+\section{Tasa de decaimiento}
+
+Un estado concentrado en la región del falso vacío no puede ser un autoestado de energía, puesto que estos, al no poseer dependencia temporal, no pueden decaer \cite{andreassen2017precision}. Podríamos expandirlo en una combinación lineal de estos autoestados, pero es más conveniente considerarlo como un estado metaestable cuya energía adquiere una parte imaginaria debido al tunelamiento  \cite{weinberg2012classical, paranjape2017theory}. 
+
+A diferencia de lo que sucede con los autoestados de energía, la evolución temporal del estado metablestable ya no consiste únicamente en la adquisición de una fase \cite{kleinert2009path}
+\begin{equation}
+e^{iE t/\hbar}\ket{\psi} = e^{i\Re\qty(E) t/\hbar}e^{\Im\qty(E) t/\hbar}\ket{\psi}.
+\end{equation}
+La parte imaginaria de la energía hace que la probabilidad de que una partícula permanezca en la región del falso vacío, relacionada con la norma del estado metaestable, disminuya exponencialmente en el tiempo 
+\begin{equation} \label{eq:prob}
+P_{\text{FV}}(t) \propto e^{-\Gamma t/\hbar},
+\end{equation}
+lo que nos permite definir la tasa de decaimiento $\Gamma$ como
+\begin{equation}\label{eq:gammaE}
+\Gamma = -2 \, \mathrm{Im}\left(\frac{E}{\hbar}\right).
+\end{equation} 
+Esta definición considera implícitamente que la parte imaginaria de la energía del estado metaestable es negativa, de tal manera que $\Gamma$ sea positiva. De no ser así, la probabilidad \eqref{eq:prob} crecería, en lugar de decaer, exponencialmente \cite{kleinert2009path}. 
+
+Podemos entender cualitativamente este comportamiento estudiando numéricamente la evolución temporal de una función de onda concentrada inicialmente en la región del falso vacío de un potencial sencillo como el de la figura \ref{fig:potencial_numerico}, y calculando la probabilidad de encontrar a la partícula en esta región luego de un tiempo $t$. Los resultados de la simulación se presentan en la figura \ref{fig:numerico} para distintos anchos de la región de verdadero vacío. Tal como esperábamos, se observa claramente la dependencia lineal de la probabilidad en escala logarítmica con el tiempo. Notamos además que las tres rectas tienen la misma pendiente, lo cual indica que la forma especifica de la parte derecha del potencial no influye de manera significativa en la dinámica del sistema \cite{paranjape2017theory}. 
+
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+	
+	\draw[<->] (6.5, 0) node[anchor = west] {$x$}-- (0,0) -- (0,5) node[anchor = south] {$V(x)$};
+	
+	\draw[blue, line width = 0.5mm] (0,0.975) -- (0, 4.5);
+	\draw[blue, line width = 0.5mm] (-0.025,1) -- (1.025,1);
+	\draw[blue, line width = 0.5mm] (1,0.975) -- (1,3.025);
+	\draw[blue, line width = 0.5mm] (0.975,3) -- (2.5, 3);
+	\draw[blue, line width = 0.5mm] (2.5, 3.025) -- (2.5,-0.025);
+	\draw[blue, line width = 0.5mm] (2.475,0) -- (6,0);
+	\draw[blue, line width = 0.5mm] (6,0) -- (6, 4.5);
+	
+	\node at (0.5, 2) (FV) {FV};
+	\node at (1.75, 2) (B) {B};
+	\node at (4.25, 2) (B) {R};
+	
+	\end{tikzpicture}
+	\caption{Potencial para el estudio numérico del decaimiento del falso vacío. Cuenta con una región de falso (FV) y verdadero (R) vacío, así como una barrera (B).}
+	\label{fig:potencial_numerico}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.35]{FIGURAS/numerico_masoumi}
+	\caption{Probabilidad de que una partícula permanezca en la región de falso vacío para distintos anchos de verdadero vacío. El eje vertical está en escala logarítmica \cite{Masoumi:2015psa}.}
+	\label{fig:numerico}
+\end{figure}
+
+En la misma figura, sin embargo, puede apreciarse que el régimen lineal se mantiene solo durante un cierto intervalo de tiempo. Antes de atravesar la barrera, la función de onda oscila en la región del falso vacío. 
+%Esto se puede apreciar más fácilmente en la figura \ref{fig:numericoandreassen}. 
+Por otro lado, cuando la función de onda ya atravesó la barrera y se encuentra la región del verdadero vacío, rebota con la pared derecha y empieza a interactuar consigo misma, dando como resultado efectos no lineales \cite{Masoumi:2015psa}. Estos aspectos deben ser tomados en cuenta al momento de definir $\Gamma$ de manera precisa \cite{andreassen2017precision}. 
+
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[scale = 0.7]{FIGURAS/numerico_andreassen}
+%	\caption{\cite{andreassen2017precision}}
+%	\label{fig:numericoandreassen}
+%\end{figure}
+
+%Siguiendo el formalismo de Coleman y Callan \cite{coleman1977fate, callan1977fate}, hallaremos una expresión para $\Gamma$ a primer orden en $\hbar$ . Puesto que el tunelamiento es un proceso no perturbativo, se hará uso de la integral de camino euclideana junto con la aproximación de punto estacionario.
+
+\section{Integral de camino euclideana}
+
+%En el capítulo anterior pudimos determinar, analizando el tunelamiento usando la aproximación WKB, que el coeficiente $B$ en \eqref{eq:gamma} corresponde a la acción euclideana del bounce. Para calcular el coeficiente $A$ es necesario usar la integral de camino de Feynman en tiempo euclideano y la aproximación de punto estacionario. 
+
+El objetivo principal de este trabajo es calcular $\Gamma$ a primer orden en $\hbar$ para el estado metaestable de menor energía. Para esto se hará uso de la integral de camino euclideana y la aproximación de punto estacionario siguiendo el formalismo establecido por Coleman y Callan \cite{coleman1977fate, callan1977fate}. 
+
+Consideremos una partícula que inicialmente se encuentra en la posición $x_i$ en un tiempo $t_i$. La amplitud de transición de esta a una posición final $x_f$ en un tiempo $t_f$ está dada por la integral de camino de Feynman \cite{feynman2010quantum}
+\begin{equation}\label{eq:amplitud}
+\bra{x_f, t_f}\ket{x_i, t_i} = N \int \mathcal{D}x \, e^{iS\qty[x \qty(t)]/\hbar},
+\end{equation}
+donde $S\qty[x \qty(t)]$ es la acción de la partícula que, de la Mecánica Clásica, sabemos que es está dada por \footnote{A lo largo de todo el trabajo consideraremos que la partícula es de masa unitaria. 
+}
+\begin{equation}
+S\qty[x \qty(t)] = \int \dd{t} \qty[\frac{1}{2} \left(\dv{x}{t}\right)^2 - V\qty(x)] \label{eq:accion}
+\end{equation}
+y $N$ es una constante de normalización que se debe elegir convenientemente, pero que no será de interés en este trabajo. 
+%incluir explicacion de la integral de camino?
+
+Una de las dificultades al momento de querer calcular \eqref{eq:amplitud} se debe al hecho de que está compuesta por una suma de fases complejas oscilatorias, que no necesariamente va a converger. Es por esto que resulta más conveniente trabajar en tiempo imaginario, para lo cual introducimos el tiempo euclideano $\tau$ mediante el cambio de variable
+\begin{equation}
+	t = -i\tau, \label{tiempo_im}
+\end{equation} 
+también conocido como rotación de Wick \cite{das2006field}. $\tau$ es un parámetro real. 
+
+Aplicando el cambio de variable \eqref{tiempo_im} en la acción \eqref{eq:accion}, tenemos
+\begin{align}
+S\qty[x\qty(\tau)] &= \int \dd{\qty(-i\tau)} \qty[ \frac{1}{2} \left(\dv{x}{\qty(-i\tau)}\right)^2 - V(x)] \\
+&= -i\int \dd{\tau} \qty[ -\frac{1}{2} \left(\dv{x}{\tau}\right)^2 - V\qty(x)] \\ 
+&= i \int \dd{\tau} \qty[ \frac{1}{2}\qty(\dv{x}{\tau})^2 + V(x)] \\
+&= iS_E\qty[x\qty(\tau)] \label{eq:S_s_e}
+\end{align}
+donde hemos definido la acción euclideana $S_E\qty[x\qty(\tau)]$ como 
+\begin{equation}\label{eq:eucliaction}
+S_E\qty[x\qty(\tau)] \equiv \int \dd{\tau} \qty[ \frac{1}{2}\qty(\dv{x}{\tau})^2 + V(x)].
+\end{equation}
+
+Haciendo de igual manera en la ecuación de movimiento
+\begin{align}
+	\dv[2]{x}{t} &= -\dv{V(x)}{x} \\
+	\dv[2]{x}{\qty(-i\tau)} &= -\dv{V(x)}{x} \\
+	-\dv[2]{x}{\tau} &= -\dv{V(x)}{x},
+\end{align}
+obtenemos la correspondiente para  $S_E\qty[x\qty(\tau)]$
+\begin{equation}\label{eq:mov_ec}
+\dv[2]{x}{\tau} = \dv{V(x)}{x}.
+\end{equation}
+Podemos entender esta ecuación como la ecuación de movimiento en tiempo real para una partícula moviéndose en el potencial invertido $-V\qty(x)$
+\begin{equation}
+\dv[2]{x}{\tau} = -\dv{\qty(-V(x))}{x}.
+\end{equation}
+ 
+%Integrando la ecuación de movimiento \eqref{eq:mov_ec} respecto a la posición obtenemos la integral de movimiento
+%\begin{align}
+%	\dv[2]{x}{\tau} - \dv{V(x)}{x} &= 0 \\
+%	\dv[2]{x}{\tau} - \dv{V(x)}{x} &= 0
+%\end{align} 
+Por último, en la energía, 
+\begin{align}
+	E &= \frac{1}{2} \left(\dv{x}{t}\right)^2 + V\qty(x) \\
+	&= \frac{1}{2} \left(\dv{x}{\qty(-i\tau)}\right)^2 + V\qty(x) \\
+	&= -\frac{1}{2} \left(\dv{x}{\tau}\right)^2 + V\qty(x) \\
+	&= -\mathcal{E}
+\end{align}
+donde hemos definido la energía euclideana $\mathcal{E}$ como \cite{rubakov2009classical}
+\begin{equation}
+	\mathcal{E} = \left(\dv{x}{\tau}\right)^2 - V\qty(x)
+\end{equation}
+
+Al reemplazar \eqref{eq:S_s_e} en la integral de camino \eqref{eq:amplitud}, obtenemos la integral de camino euclideana \cite{das2006field}
+\begin{equation}\label{eq:amplitud_euc}
+I = \bra{x_f}e^{-HT/\hbar}\ket{x_i} = N \int \mathcal{D}x \, e^{-S_E\qty[x\qty(\tau)]/\hbar},
+\end{equation}
+donde $T$ es el intervalo de tiempo euclideano que le toma a la partícula ir de $x_i$ a $x_f$. De esta manera, hemos convertido las fases oscilatorias en \eqref{eq:amplitud} en exponenciales decayentes que podremos calcular de manera aproximada mediante integrales gausianas, como se verá en la sección siguiente.
+
+Insertamos una base de autoestados de energía $\qty{\ket{n}}$ en \eqref{eq:amplitud_euc} \cite{coleman1977fate}
+\begin{equation}\label{eq:Eeigen}
+I = \sum_n e^{-E_n T/\hbar} \bra{x_f}\ket{n}\bra{n}\ket{x_i}, 
+\end{equation}
+donde $\phi_n\qty(x) = \bra{x}\ket{n}$ es la función de onda del autoestado de energía $\ket{n}$. En el límite $T \rightarrow \infty$, que es en el que estamos interesados finalmente, la contribución de los términos de orden superior es exponencialmente pequeña, lo que nos permite extraer la energía del estado fundamental\footnote{Asumiendo que los autoestados de energía están normalizados.} \cite{andreassen2017precision}
+\begin{equation} \label{E_0_feynman}
+	\frac{E_0}{\hbar} = -\lim_{T \rightarrow \infty} \frac{ \ln I}{T}.
+\end{equation}
+
+Como ya se discutió en la sección anterior,  %ver si de verdad se discutio
+la energía del estado metaestable cuenta con una parte imaginaria, a partir de la cual obtenemos la tasa de decaimiento del falso vacío $\Gamma$ usando \eqref{eq:gammaE}. A su vez, $E_0$ está dado por \eqref{E_0_feynman}, por lo que ahora podemos calcular $\Gamma$ directamente de la integral de camino euclideana \eqref{eq:amplitud_euc}
+\begin{equation} \label{eq:Gamma}
+	\Gamma = 2\Im\qty(\lim_{T \rightarrow \infty} \frac{ \ln I}{T}).
+\end{equation}
+
+\section{Aproximación de punto estacionario}
+
+Los casos para los cuales es posible calcular la integral de camino de manera exacta son muy pocos y suelen involucrar técnicas matemáticas sofisticadas \cite{feynman2010quantum, das2006field, kleinert2009path}, por lo que usualmente se tiene que recurrir a métodos aproximados. En nuestro caso, haremos uso de la aproximación de punto estacionario (\emph{saddle point approximation}) para calcular la integral de camino euclideana $I$ en \eqref{eq:amplitud_euc}. 
+
+Al igual que en el cálculo diferencial, los puntos estacionarios de la acción euclideana $S_E\qty[x\qty(\tau)]$ son aquellos que cumplen con la condición
+\begin{equation}\label{eq:minimo}
+	\fdv{S_E\qty[x\qty(\tau)]}{x\qty(\tau)} = 0.
+\end{equation}
+Esto no es más que el principio de mínima acción de la Mecánica Clásica, por lo que los puntos estacionarios corresponden a las trayectorias clásicas $x_{\text{cl}}\qty(\tau)$, soluciones de la ecuación de movimiento \eqref{eq:mov_ec}. Por simplicidad, supondremos que tenemos un único punto estacionario.
+
+Expandiendo $S_E\qty[x\qty(\tau)]$ como una serie de Taylor alrededor de la trayectoria clásica $x_{\text{cl}}\qty(\tau)$
+\begin{equation} \label{eq:trayec}
+	x\qty(\tau) = x_{\textrm{cl}}\qty(\tau) + \eta\qty(\tau),
+\end{equation}
+donde $\eta\qty(\tau)$ es la variación respecto a la trayectoria clásica con las condiciones de frontera
+\begin{equation}
+	\eta\qty(\tau_i) = \eta\qty(\tau_f) = 0,
+\end{equation}
+tenemos
+\begin{align} 
+S_{E}\qty[x\qty(\tau)] &= S_{E}[x_{\textrm{cl}}(\tau) +  \eta\qty(\tau)] \\ 
+&= S_{E}[x_{\textrm{cl}}\qty(\tau)]
+%+ \int \dd{\tau_1}\eta(\tau_1) 	\fdv{S_E\qty[x_{\textrm{cl}}\qty(\tau_1)]}{x_{\textrm{cl}}\qty(\tau_1)} 
++ \frac{1}{2} \int \dd{\tau_1} \dd{\tau_2} \eta(\tau_1) \frac{\delta^2 S_E[x_{\textrm{cl}}\qty(\tau)]}{\var{x_{\textrm{cl}}\qty(\tau_1)} \var{x_{\textrm{cl}}\qty(\tau_2)}} \eta\qty(\tau_2) + \order{\eta^3}. \label{eq:approx1}
+\end{align}
+El primer término corresponde a la acción euclideana clásica  $S_E^{\textrm{cl}}$. Por conveniencia, definimos la variación de segundo orden como
+\begin{equation}
+	S_E^{(2)} \equiv \frac{1}{2} \int \dd{\tau_1} \dd{\tau_2} \eta\qty(\tau_1) \frac{\delta^2 S_E[x_{\textrm{cl}}\qty(\tau)]}{\var{x_{\textrm{cl}}(\tau_1)} \var{x_{\textrm{cl}}\qty(\tau_2)}} \eta\qty(\tau_2). \label{eq:S_2}
+\end{equation}
+El término lineal se cancela  por \eqref{eq:minimo}, debido a que la trayectoria clásica es un punto estacionario de la acción. 
+
+En comparación con los términos anteriores, el valor de $\hbar$ es pequeño. Esto nos permite ignorar los términos de orden superior en \eqref{eq:approx1}. Para verlo más claramente, reemplacemos $S_{E}\qty[x\qty(\tau)]$ en la integral de camino euclideana \eqref{eq:amplitud_euc} por \eqref{eq:approx1},
+\begin{equation}\label{eq:Iaprox1}
+I = N e^{-S_E^{\textrm{cl}}/\hbar} \int \mathcal{D}\eta \, e^{-S_E^{(2)}/\hbar + \order{\eta^3}},
+\end{equation}
+donde, al haber fijado el camino clásico, ahora integramos sobre todas sus variaciones, cambiando la medida de integración. Escalando $\eta\qty(\tau) \rightarrow \sqrt{\hbar}\eta\qty(\tau)$ \footnote{La nueva medida de integración incluye un factor constante que absorbemos en $N$.},
+\begin{equation}\label{eq:Iaprox2}
+I = N e^{-S_E^{\textrm{cl}}/\hbar} \int \mathcal{D}\eta \, e^{-S_E^{(2)} + \order{\hbar}}
+\end{equation}
+notamos que los términos de orden superior en \eqref{eq:approx1} son de primer orden en $\hbar$, justificando la aproximación \cite{paranjape2017theory}. Esta es la razón por lo que la aproximación de punto estacionario es un método semiclásico. Será a este orden que calcularemos la tasa de decaimiento del falso vacío $\Gamma$. 
+
+La derivada funcional de la acción euclideana \eqref{eq:eucliaction} es igual a la ecuación de movimiento \eqref{eq:mov_ec}
+\begin{equation} \label{eq:dev1}
+	\fdv{S_E\qty[x\qty(\tau)]}{x\qty(\tau_1)} = -\ddot{x}\qty(\tau_1) + V'\qty(\tau_1),
+\end{equation}
+donde el punto indica la derivada respecto al tiempo euclideano $\tau$, mientras que la prima indica la derivada respecto a la posición $x\qty(\tau)$. Tomando la derivada funcional de \eqref{eq:dev1} y desarrollando 
+\begin{align}
+\frac{\var{S_E[x\qty(\tau)]}}{{\var{x}(\tau_1)} \var{x}\qty(\tau_2)} &= -\fdv{\ddot{x}\qty(\tau_1)}{x\qty(\tau_2)} + \fdv{V'\qty(x)}{x\qty(\tau_2)} \\
+&= -\dv[2]{\tau_1}\qty(\fdv{x\qty(\tau_1)}{x\qty(\tau_2)}) + V''\qty(x)\fdv{x\qty(\tau_1)}{x\qty(\tau_2)} \\
+&= \qty(-\dv[2]{\tau_1} + V''\qty(x)) \delta\qty(\tau_1 - \tau_2).
+\end{align}
+Reemplazando en \eqref{eq:S_2}
+\begin{align}
+	S_E^{(2)} &= \frac{1}{2} \int \dd{\tau_1} \dd{\tau_2} \eta\qty(\tau_1) \qty(-\dv[2]{\tau_1} + V''\qty(x_{\text{cl}}))\delta\qty(\tau_1 - \tau_2) \eta\qty(\tau) \\ \label{eq:S_2_1}
+	&= \frac{1}{2} \int \dd{\tau} \eta\qty(\tau) \qty(-\dv[2]{\tau} + V''\qty(x_{\text{cl}})) \eta\qty(\tau),
+\end{align}
+notamos que el cálculo de $S_E^{(2)}$ está íntimamente relacionado con el operador
+\begin{equation} \label{eq:operador}
+	-\dv[2]{\tau} + V''\qty(x_{\text{cl}}).
+\end{equation}
+
+Introduzcamos una base de autofunciones del operador \eqref{eq:operador} $\qty{\eta_i \qty(\tau)}$
+\begin{equation} \label{eq:eigen1}
+\qty( - \dv[2]{\tau} + V''\qty(x_{\text{cl}})) \eta_\lambda\qty(\tau) = \lambda \eta_\lambda\qty(\tau),
+\end{equation}
+tal que podemos expandir las variaciones respecto a la trayectoria clásica $\eta\qty(\tau)$ en función de esta
+ \begin{equation}\label{eq:eigen3}
+\eta\qty(\tau) = \sum_\lambda c_\lambda \eta_\lambda \qty(\tau). 
+\end{equation}
+Como la base es completa y ortonormal,
+\begin{equation} \label{eq:eigen2}
+\int \dd{\tau} \eta_{\lambda'}\qty(\tau) \eta_{\lambda}\qty(\tau) = \delta_{\lambda'\lambda}.
+\end{equation}
+Insertando \eqref{eq:eigen3} en \eqref{eq:S_2_1} y usando \eqref{eq:eigen1} y \eqref{eq:eigen3},
+\begin{align}
+S_E^{(2)} &= \frac{1}{2} \int \dd{\tau}\qty( \sum_{\lambda'} c_{\lambda'} \eta_{\lambda'} \qty(\tau)) \qty(-\dv[2]{\tau} + V''\qty(x_{\text{cl}})) \qty( \sum_\lambda c_\lambda \eta_\lambda \qty(\tau)) \\
+&= \frac{1}{2} \sum_{\lambda'} \sum_\lambda \lambda c_\lambda' c_\lambda \int \dd{\tau} \eta_\lambda' \qty(\tau)  \eta_\lambda \qty(\tau) \\
+&= \frac{1}{2} \sum_{\lambda'} \sum_\lambda \lambda c_\lambda' c_\lambda \delta_{\lambda'\lambda} \\
+&= \frac{1}{2} \sum_\lambda \lambda c_\lambda^2. \label{eq:S_2_2}
+\end{align}
+
+Al momento de reemplazar la expresión anterior en la amplitud \eqref{eq:Iaprox1}, pasamos a integrar sobre todos los coeficientes $\qty{c_\lambda}$, por lo que elegimos como medida de integración 
+\begin{equation}
+	\mathcal{D}\eta = \prod_\lambda \frac{\dd{c_\lambda}}{\sqrt{2\pi \hbar}}.
+\end{equation}
+donde incluimos el factor $\sqrt{2\pi \hbar}$ por conveniencia. Este solo afecta a la constante de normalización $N$. 
+
+Con esto, hemos aproximado la amplitud \eqref{eq:Iaprox1} como un producto de integrales gausianas
+\begin{equation}
+I \approx N e^{-S_E^{\textrm{cl}}/\hbar} \int \prod_\lambda \frac{\dd{c_\lambda}}{\sqrt{2\pi \hbar}} e^{-\sum_\lambda \lambda c_\lambda^2/2\hbar}
+\end{equation}
+cuyo resultado es conocido y fácil de calcular
+\begin{align}
+I &\approx N e^{-S_E^{\textrm{cl}}/\hbar} \int \prod_\lambda \frac{\dd{c_\lambda}}{\sqrt{2\pi \hbar}} \prod_\lambda e^{-\lambda c_\lambda^2/2\hbar} \\
+&\approx N e^{-S_E^{\textrm{cl}}/\hbar} \prod_\lambda \int  \frac{\dd{c_\lambda}}{\sqrt{2\pi \hbar}} e^{-\lambda c_\lambda^2/2\hbar} \\
+&\approx N e^{-S_E^{\textrm{cl}}/\hbar} \prod_\lambda \lambda^{ -1/2}.
+\end{align}
+La multiplicación de los autovalores en el último término es igual a la determinante del operador \eqref{eq:operador}. Con esto, tenemos finalmente la integral de camino euclideana en la aproximación de punto estacionario
+\begin{equation}\label{eq:Isaddle}
+I = Ne^{-S_E^{\textrm{cl}} / \hbar} \qty[ \det\left(-\dv[2]{\tau} + V''\qty(x_{\textrm{cl}}) \right) ]^{-1/2} \qty(1 + \order{\hbar}).
+\end{equation}
+Cabe resaltar que esta aproximación es de primer orden en $\hbar$. En caso la acción euclideana tenga múltiples puntos estacionarios, se debe sumar la contribución de cada uno.
+
+%Notamos que la amplitud consta de un término no perturbativo dado por la exponencial y 
+
+En la derivación anterior hemos supuesto implícitamente que todos los autovalores del operador \eqref{eq:operador} son positivos y distintos de cero. De no ser así, tendríamos que tratar cada uno de estos por separado, resultando en factores adicionales en la ecuación \eqref{eq:Isaddle}. Como veremos en las siguientes secciones, este es justamente el caso para el decamimento del falso vacío.
+
+\section{Bounce}
+
+%Para calcular la integral de camino euclideana \eqref{eq:Isaddle} Los puntos estacionarios correspondientes al decaimiento del falso vacío corresponden a las trayectorias clásicas de una partícula movi para un potencial como el de la figura \ref{fig:potencial}. 
+
+ 
+%Al momento de calcular $\Gamma$ usando la ecuación \eqref{eq:Gamma} estamos interesados en el límite cuando $T$ se hace infinito.  
+%Usando la ecuación la tasa de decaimiento del falso vacío $\Gamma$ 
+%Para poder calcular la amplitud $I$ dada por la ecuación \eqref{eq:Isaddle} en el caso del decaimiento del falso vacío, debemos hallar las trayectorias clásica correspondientes, al ser los puntos estacionarios de la acción euclideana $S_E\qty[x\qty(\tau)]$,
+%Como se discutió en la sección inicial de este capítulo, obtendremos la tasa de decaimiento del falso vacío $\Gamma$ a partir de la amplitud $I$ correspondiente. Para esto haremos uso de la ecuación \eqref{eq:Isaddle}, pero antes necesitamos conocer las trayectorias clásicas 
+
+Como se discutió en la sección inicial de este capítulo, la tasa de decaimiento del falso vacío $\Gamma$ está relacionada con la probabilidad de que una partícula permanezca en la región del falso vacío del potencial. %como los de las figuras \ref{fig:potencial} y \ref{fig:potencial_numerico}. 
+Es por esto que, las trayectorias clásicas, necesarias para calcular la amplitud $I$ dada por la ecuación \eqref{eq:Isaddle} en la aproximación de punto estacionario, deben empezar y terminar en dicha región. 
+%Al momento de realizar la aproximación de punto estacionario, consideramos que la partícula va de la posición inicial a la final en un intervalo de tiempo euclideano $T$ finito. Sin embargo, %puesto que obtendremos $\Gamma$ a partir de la ecuación \eqref{eq:Gamma}, 
+%estamos interesados en el límite $T \rightarrow \infty$ 
+
+%Además, estamos interesados en el límite en el que el intervalo de tiem po euclideano $T$ se hace infinito \cite{coleman1977fate}. 
+%
+Tomando como referencia la figura \ref{fig:potencial}, las trayectorias clásicas deben ser las soluciones de la ecuación de movimiento \eqref{eq:mov_ec} con las condiciones de frontera \cite{coleman1977fate}
+\begin{equation} \label{eq:cond_frontera}
+	\lim_{\tau \rightarrow \pm\infty} x\qty(\tau) = x_+.
+\end{equation} 
+Las trayectorias clásicas obtenidas no serán las exactas, pero son buenas aproximaciones, especialmente a medida que tomamos intervalos de tiempo euclideano $T$ cada vez mayores, que es el límite en el que estamos interesados al final \cite{paranjape2017theory, callan1977fate}. 
+%donde hemos considerado el hecho de que Si bien las trayectorias que obtendremos no son exactamente los puntos estacionarios, representan buenas aproximaciones especialmente a medida que hacemos $T$ cada vez mayor. 
+
+Notamos rápidamente que tenemos una primera trayectoria clásica en la que la partícula permanece en el falso vacío todo el tiempo. Llamaremos a esta solución 
+\begin{equation}
+	x_{\text{FV}}\qty(\tau) = x_+
+\end{equation}
+es la solución trivial de \eqref{eq:mov_ec} que cumple  \eqref{eq:cond_frontera}.
+
+Analizando el potencial invertido de la figura 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.3]{FIGURAS/potencial_invertido}
+	\caption{Potencial invertido \cite{Ai:2019dqr}.}
+	\label{fig:potencial_invertido}
+\end{figure}
+
+
+\section{Modo zero}
+
+\section{Modo negativo}
+
+Normalmente, la amplitud no contiene una parte imaginaria. Sin embargo, por continuación analítica adquiere una. 
+
+\section{Contribución multibounce}

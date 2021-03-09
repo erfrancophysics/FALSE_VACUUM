@@ -1,0 +1,148 @@
+\documentclass[12pt, a4paper, oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{tikz}
+%\usepackage{lmodern}
+%\usepackage{kpfonts}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{bm}
+%\usepackage{cite}
+\usepackage[
+backend = biber,
+bibstyle = apa,
+citestyle = numeric, 
+sorting = none
+]{biblatex}
+\usepackage{hyperref}
+\usepackage{cleveref}
+%\usepackage{autonum}
+%\usepackage{comment}
+\usepackage{braket}
+\usepackage{amsthm}
+\usepackage{csquotes}
+\usepackage{physics}
+\usepackage{fancyhdr}
+\usepackage{newtxtext, newtxmath}
+
+\graphicspath{{FIGURAS/}}
+\addbibresource{falso_vacio.bib}
+
+\usetikzlibrary{babel}
+
+\DeclareFieldFormat{labelnumberwidth}{\mkbibbrackets{#1}}
+
+\defbibenvironment{bibliography}
+  {\list
+     {\printtext[labelnumberwidth]{%
+      \printfield{labelprefix}%
+      \printfield{labelnumber}}}
+     {\setlength{\labelwidth}{\labelnumberwidth}%
+      \setlength{\leftmargin}{\labelwidth}%
+      \setlength{\labelsep}{\biblabelsep}%
+      \addtolength{\leftmargin}{\labelsep}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}%
+      \renewcommand*{\makelabel}[1]{\hss##1}}
+  {\endlist}
+  {\item}
+
+\linespread{1.6}
+
+\allowdisplaybreaks
+
+\decimalpoint
+
+%\title{Decaimiento del falso vacío en la Mecánica Cuántica y la Teoría Cuántica de Campos}
+%\author{Erwin Renzo Franco Diaz}
+
+\begin{document}
+	
+\frontmatter
+	
+\begin{titlepage}
+\begin{center}
+
+\thispagestyle{empty}
+
+\textsc{\LARGE{Universidad Nacional Mayor de San Marcos}} \\
+\large{Universidad del Perú, Decana de América} \\ [0.5cm] 
+\textsc{\LARGE Facultad de Ciencias Físicas} \\  
+\textsc{\Large Escuela Profesional de Física} \\ [1cm]
+
+\includegraphics*[height = 5cm]{unmsm_logo.png} \\ [1cm]
+
+\textsc{\LARGE Trabajo de Investigación} \\ [0.25cm]
+\large \text{Para optar el Grado Académico de Bachiller en Física} \\ [0.5cm]
+
+\LARGE{\bfseries{Decaimiento del falso vacío en la Mecánica Cuántica y la Teoría Cuántica de Campos}} \\ [0.5cm] 
+
+\textsc{\LARGE Autor} \\ [0.25cm] 
+\large{Erwin Renzo Franco Diaz} \\ [0.5cm]
+
+\textsc{\LARGE Asesor} \\ [0.25cm] 
+\large{Teófilo Vargas Auccalla} \\ 
+
+\vfill
+
+\large \text{Lima, Perú} \\ [0.25cm]
+\large \text{2021}
+
+\end{center}
+\end{titlepage}
+
+\newgeometry{top = 1in, bottom = 1in, right = 1in, left = 1in}
+
+\addcontentsline{toc}{chapter}{Resumen}
+
+\begin{center}
+	\thispagestyle{plain}
+	\setlength{\parskip}{0pt}
+	{\huge{\textsc{Resumen}} \par}
+\end{center}
+
+zdlkjgblkjgblsjkgnlsjkgn
+
+\newpage
+
+\addcontentsline{toc}{chapter}{Agradecmientos}
+
+\begin{center}
+	\thispagestyle{plain}
+	
+	\setlength{\parskip}{0pt}
+	{\huge{\textsc{Agradecimientos}} \par}
+\end{center}
+
+\addcontentsline{toc}{chapter}{Índice general}
+\tableofcontents
+
+\addcontentsline{toc}{chapter}{Índice de figuras}
+\listoffigures
+
+\newpage
+
+\begin{center}
+	\thispagestyle{empty}
+	\hspace{0pt}
+	\vfill
+	\textit{Dedicado a}
+	\vfill
+	\hspace{0pt}
+\end{center}
+
+\mainmatter
+
+\input{CAPITULOS/introduccion}
+\input{CAPITULOS/falso_vacio_mecanica_cuantica}
+\input{CAPITULOS/conclusiones}
+
+\printbibliography
+\addcontentsline{toc}{chapter}{Bibliografía}
+
+\end{document}
