@@ -2101,7 +2101,8 @@
     <bcf:citekey order="25">coleman1977fate</bcf:citekey>
     <bcf:citekey order="26">paranjape2017theory</bcf:citekey>
     <bcf:citekey order="26">callan1977fate</bcf:citekey>
-    <bcf:citekey order="27">Ai:2019dqr</bcf:citekey>
+    <bcf:citekey order="27">coleman1977fate</bcf:citekey>
+    <bcf:citekey order="28">Ai:2019dqr</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
