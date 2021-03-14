@@ -37,8 +37,8 @@
       \strng{authorbibnamehash}{75490b33cc945bf2b8065e32cf03fc58}
       \strng{authornamehash}{75490b33cc945bf2b8065e32cf03fc58}
       \strng{authorfullhash}{75490b33cc945bf2b8065e32cf03fc58}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -51,6 +51,78 @@
       \field{year}{1928}
       \field{pages}{805\bibrangedash 806}
       \range{pages}{2}
+    \endentry
+    \entry{coleman1977fate}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=482d8709754f85ef0a09f447888369c7}{%
+           family={Coleman},
+           familyi={C\bibinitperiod},
+           given={Sidney},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{482d8709754f85ef0a09f447888369c7}
+      \strng{fullhash}{482d8709754f85ef0a09f447888369c7}
+      \strng{bibnamehash}{482d8709754f85ef0a09f447888369c7}
+      \strng{authorbibnamehash}{482d8709754f85ef0a09f447888369c7}
+      \strng{authornamehash}{482d8709754f85ef0a09f447888369c7}
+      \strng{authorfullhash}{482d8709754f85ef0a09f447888369c7}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review D}
+      \field{number}{10}
+      \field{title}{Fate of the false vacuum: Semiclassical theory}
+      \field{volume}{15}
+      \field{year}{1977}
+      \field{pages}{2929}
+      \range{pages}{1}
+    \endentry
+    \entry{callan1977fate}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=3edadbe556a3183211f991deda5520ec}{%
+           family={Callan\bibnamedelima Jr},
+           familyi={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Curtis\bibnamedelima G},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=482d8709754f85ef0a09f447888369c7}{%
+           family={Coleman},
+           familyi={C\bibinitperiod},
+           given={Sidney},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{60c196298bd66a014a57d0c5b1dd26e0}
+      \strng{fullhash}{60c196298bd66a014a57d0c5b1dd26e0}
+      \strng{bibnamehash}{60c196298bd66a014a57d0c5b1dd26e0}
+      \strng{authorbibnamehash}{60c196298bd66a014a57d0c5b1dd26e0}
+      \strng{authornamehash}{60c196298bd66a014a57d0c5b1dd26e0}
+      \strng{authorfullhash}{60c196298bd66a014a57d0c5b1dd26e0}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review D}
+      \field{number}{6}
+      \field{title}{Fate of the false vacuum. II. First quantum corrections}
+      \field{volume}{16}
+      \field{year}{1977}
+      \field{pages}{1762}
+      \range{pages}{1}
     \endentry
     \entry{Ai:2019dqr}{thesis}{}
       \name{author}{1}{}{%
@@ -67,8 +139,8 @@
       \strng{authorbibnamehash}{5244c9b17f3e24650df257b0604dcbfa}
       \strng{authornamehash}{5244c9b17f3e24650df257b0604dcbfa}
       \strng{authorfullhash}{5244c9b17f3e24650df257b0604dcbfa}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -114,8 +186,8 @@
       \strng{authorbibnamehash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
       \strng{authornamehash}{5a9bd8c1e56a632b8e6e9feb5af4c8e4}
       \strng{authorfullhash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -147,8 +219,8 @@
       \strng{authorbibnamehash}{834e49d190d73f6e582eefbc082a837e}
       \strng{authornamehash}{834e49d190d73f6e582eefbc082a837e}
       \strng{authorfullhash}{834e49d190d73f6e582eefbc082a837e}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -175,8 +247,8 @@
       \strng{authorbibnamehash}{06528b4cf51595378ecb7bfedc0efa8b}
       \strng{authornamehash}{06528b4cf51595378ecb7bfedc0efa8b}
       \strng{authorfullhash}{06528b4cf51595378ecb7bfedc0efa8b}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -203,8 +275,8 @@
       \strng{authorbibnamehash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
       \strng{authornamehash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
       \strng{authorfullhash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -244,78 +316,6 @@
       \verb 1505.06397
       \endverb
     \endentry
-    \entry{coleman1977fate}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=482d8709754f85ef0a09f447888369c7}{%
-           family={Coleman},
-           familyi={C\bibinitperiod},
-           given={Sidney},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{482d8709754f85ef0a09f447888369c7}
-      \strng{fullhash}{482d8709754f85ef0a09f447888369c7}
-      \strng{bibnamehash}{482d8709754f85ef0a09f447888369c7}
-      \strng{authorbibnamehash}{482d8709754f85ef0a09f447888369c7}
-      \strng{authornamehash}{482d8709754f85ef0a09f447888369c7}
-      \strng{authorfullhash}{482d8709754f85ef0a09f447888369c7}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review D}
-      \field{number}{10}
-      \field{title}{Fate of the false vacuum: Semiclassical theory}
-      \field{volume}{15}
-      \field{year}{1977}
-      \field{pages}{2929}
-      \range{pages}{1}
-    \endentry
-    \entry{callan1977fate}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=3edadbe556a3183211f991deda5520ec}{%
-           family={Callan\bibnamedelima Jr},
-           familyi={C\bibinitperiod\bibinitdelim J\bibinitperiod},
-           given={Curtis\bibnamedelima G},
-           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=482d8709754f85ef0a09f447888369c7}{%
-           family={Coleman},
-           familyi={C\bibinitperiod},
-           given={Sidney},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{60c196298bd66a014a57d0c5b1dd26e0}
-      \strng{fullhash}{60c196298bd66a014a57d0c5b1dd26e0}
-      \strng{bibnamehash}{60c196298bd66a014a57d0c5b1dd26e0}
-      \strng{authorbibnamehash}{60c196298bd66a014a57d0c5b1dd26e0}
-      \strng{authornamehash}{60c196298bd66a014a57d0c5b1dd26e0}
-      \strng{authorfullhash}{60c196298bd66a014a57d0c5b1dd26e0}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review D}
-      \field{number}{6}
-      \field{title}{Fate of the false vacuum. II. First quantum corrections}
-      \field{volume}{16}
-      \field{year}{1977}
-      \field{pages}{1762}
-      \range{pages}{1}
-    \endentry
     \entry{feynman2010quantum}{book}{}
       \name{author}{3}{}{%
         {{uniquename=0,uniquepart=base,hash=01a5bcd4c7f7ee6bbc796dc875763f26}{%
@@ -346,8 +346,8 @@
       \strng{authorbibnamehash}{b06e378c2e75d98675eae04150562b9b}
       \strng{authornamehash}{257888b7cf1dd98859fb387e87e745f1}
       \strng{authorfullhash}{b06e378c2e75d98675eae04150562b9b}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -374,8 +374,8 @@
       \strng{authorbibnamehash}{2bc3fb1446b01bc264bb7e1399ba9021}
       \strng{authornamehash}{2bc3fb1446b01bc264bb7e1399ba9021}
       \strng{authorfullhash}{2bc3fb1446b01bc264bb7e1399ba9021}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -405,8 +405,8 @@
       \strng{authorbibnamehash}{61b7580d70058c032f02ed6067cc3483}
       \strng{authornamehash}{61b7580d70058c032f02ed6067cc3483}
       \strng{authorfullhash}{61b7580d70058c032f02ed6067cc3483}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}

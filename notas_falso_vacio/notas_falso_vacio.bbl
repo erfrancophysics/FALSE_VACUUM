@@ -63,8 +63,8 @@
       \strng{authorbibnamehash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
       \strng{authornamehash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
       \strng{authorfullhash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -72,6 +72,113 @@
       \field{labeltitlesource}{title}
       \field{title}{Path integrals in quantum mechanics, statistics, polymer physics, and financial markets}
       \field{year}{2009}
+    \endentry
+    \entry{weinberg2012classical}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=834e49d190d73f6e582eefbc082a837e}{%
+           family={Weinberg},
+           familyi={W\bibinitperiod},
+           given={Erick\bibnamedelima J},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{834e49d190d73f6e582eefbc082a837e}
+      \strng{fullhash}{834e49d190d73f6e582eefbc082a837e}
+      \strng{bibnamehash}{834e49d190d73f6e582eefbc082a837e}
+      \strng{authorbibnamehash}{834e49d190d73f6e582eefbc082a837e}
+      \strng{authornamehash}{834e49d190d73f6e582eefbc082a837e}
+      \strng{authorfullhash}{834e49d190d73f6e582eefbc082a837e}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Classical solutions in quantum field theory: Solitons and Instantons in High Energy Physics}
+      \field{year}{2012}
+    \endentry
+    \entry{andreassen2017precision}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=19eb4598c442052496e59507827ef2b2}{%
+           family={Andreassen},
+           familyi={A\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a562eb10ac2870de64b3956df2eb1896}{%
+           family={Farhi},
+           familyi={F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d4f2e14116194314c993a3eaaca193dc}{%
+           family={Frost},
+           familyi={F\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3179169c1aced94be226c750220562b1}{%
+           family={Schwartz},
+           familyi={S\bibinitperiod},
+           given={Matthew\bibnamedelima D},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{5a9bd8c1e56a632b8e6e9feb5af4c8e4}
+      \strng{fullhash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
+      \strng{bibnamehash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
+      \strng{authorbibnamehash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
+      \strng{authornamehash}{5a9bd8c1e56a632b8e6e9feb5af4c8e4}
+      \strng{authorfullhash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review D}
+      \field{number}{8}
+      \field{title}{Precision decay rate calculations in quantum field theory}
+      \field{volume}{95}
+      \field{year}{2017}
+      \field{pages}{085011}
+      \range{pages}{1}
+    \endentry
+    \entry{paranjape2017theory}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=06528b4cf51595378ecb7bfedc0efa8b}{%
+           family={Paranjape},
+           familyi={P\bibinitperiod},
+           given={Manu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{06528b4cf51595378ecb7bfedc0efa8b}
+      \strng{fullhash}{06528b4cf51595378ecb7bfedc0efa8b}
+      \strng{bibnamehash}{06528b4cf51595378ecb7bfedc0efa8b}
+      \strng{authorbibnamehash}{06528b4cf51595378ecb7bfedc0efa8b}
+      \strng{authornamehash}{06528b4cf51595378ecb7bfedc0efa8b}
+      \strng{authorfullhash}{06528b4cf51595378ecb7bfedc0efa8b}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The theory and applications of instanton calculations}
+      \field{year}{2017}
     \endentry
   \enddatalist
 \endrefsection
