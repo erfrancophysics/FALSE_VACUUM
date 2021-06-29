@@ -2079,10 +2079,20 @@
     <bcf:citekey order="3">Ai:2019dqr</bcf:citekey>
     <bcf:citekey order="4">kleinert2009path</bcf:citekey>
     <bcf:citekey order="5">weinberg2012classical</bcf:citekey>
-    <bcf:citekey order="6">andreassen2017precision</bcf:citekey>
-    <bcf:citekey order="7">andreassen2017precision</bcf:citekey>
-    <bcf:citekey order="8">paranjape2017theory</bcf:citekey>
-    <bcf:citekey order="9">Ai:2019dqr</bcf:citekey>
+    <bcf:citekey order="6">weinberg2012classical</bcf:citekey>
+    <bcf:citekey order="7">weinberg2012classical</bcf:citekey>
+    <bcf:citekey order="8">andreassen2017precision</bcf:citekey>
+    <bcf:citekey order="9">andreassen2017precision</bcf:citekey>
+    <bcf:citekey order="10">kleinert2009path</bcf:citekey>
+    <bcf:citekey order="10">rubakov2009classical</bcf:citekey>
+    <bcf:citekey order="10">andreassen2017precision</bcf:citekey>
+    <bcf:citekey order="11">kleinert2009path</bcf:citekey>
+    <bcf:citekey order="12">kleinert2009path</bcf:citekey>
+    <bcf:citekey order="13">andreassen2017precision</bcf:citekey>
+    <bcf:citekey order="14">andreassen2017precision</bcf:citekey>
+    <bcf:citekey order="15">paranjape2017theory</bcf:citekey>
+    <bcf:citekey order="16">rubakov2009classical</bcf:citekey>
+    <bcf:citekey order="17">Ai:2019dqr</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

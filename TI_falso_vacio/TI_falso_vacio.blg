@@ -1,14 +1,14 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'TI_falso_vacio.blg'
-[134] biber:313> INFO - === Thu Mar 11, 2021, 14:19:35
-[212] Biber.pm:371> INFO - Reading 'TI_falso_vacio.bcf'
-[387] Biber.pm:857> INFO - Found 12 citekeys in bib section 0
-[426] Biber.pm:3981> INFO - Processing section 0
-[458] Biber.pm:4154> INFO - Looking for bibtex format file 'falso_vacio.bib' for section 0
-[461] bibtex.pm:1468> INFO - LaTeX decoding ...
-[708] bibtex.pm:1294> INFO - Found BibTeX data source 'falso_vacio.bib'
-[1389] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1389] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1389] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
-[1431] bbl.pm:617> INFO - Writing 'TI_falso_vacio.bbl' with encoding 'UTF-8'
-[1446] bbl.pm:720> INFO - Output to TI_falso_vacio.bbl
+[26] biber:313> INFO - === Tue Jun 15, 2021, 14:34:51
+[47] Biber.pm:371> INFO - Reading 'TI_falso_vacio.bcf'
+[113] Biber.pm:857> INFO - Found 13 citekeys in bib section 0
+[127] Biber.pm:3981> INFO - Processing section 0
+[137] Biber.pm:4154> INFO - Looking for bibtex format file 'falso_vacio.bib' for section 0
+[139] bibtex.pm:1468> INFO - LaTeX decoding ...
+[179] bibtex.pm:1294> INFO - Found BibTeX data source 'falso_vacio.bib'
+[269] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[269] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[269] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[278] bbl.pm:617> INFO - Writing 'TI_falso_vacio.bbl' with encoding 'UTF-8'
+[286] bbl.pm:720> INFO - Output to TI_falso_vacio.bbl

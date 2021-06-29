@@ -30,12 +30,16 @@ sorting = none
 \usepackage{fancyhdr}
 \usepackage{newtxtext}
 \usepackage{newtxmath}
+\usepackage{subcaption}
 \usepackage[bottom]{footmisc}
+\usepackage{fancyhdr}
 
 \graphicspath{{FIGURAS/}}
 \addbibresource{falso_vacio.bib}
 
 \usetikzlibrary{babel}
+
+%\numberwithin{equation}{section}
 
 \DeclareFieldFormat{labelnumberwidth}{\mkbibbrackets{#1}}
 
@@ -60,9 +64,6 @@ sorting = none
 
 \decimalpoint
 
-%\title{Decaimiento del falso vacío en la Mecánica Cuántica y la Teoría Cuántica de Campos}
-%\author{Erwin Renzo Franco Diaz}
-
 \begin{document}
 	
 \frontmatter
@@ -80,7 +81,7 @@ sorting = none
 \includegraphics*[height = 5cm]{unmsm_logo.png} \\ [1cm]
 
 \textsc{\LARGE Trabajo de Investigación} \\ [0.25cm]
-\large \text{Para optar el Grado Académico de Bachiller en Física} \\ [0.5cm]
+\large \text{Para optar por el grado académico de Bachiller en Física} \\ [0.5cm]
 
 \LARGE{\bfseries{Decaimiento del falso vacío en la Mecánica Cuántica y la Teoría Cuántica de Campos}} \\ [0.5cm] 
 
@@ -93,7 +94,7 @@ sorting = none
 \vfill
 
 \large \text{Lima, Perú} \\ [0.25cm]
-\large \text{2021}
+\large \text{Abril 2021}
 
 \end{center}
 \end{titlepage}
@@ -108,7 +109,7 @@ sorting = none
 	{\huge{\textsc{Resumen}} \par}
 \end{center}
 
-zdlkjgblkjgblsjkgnlsjkgn
+\colorbox{yellow}{añadir descripcion de capitulos}	
 
 \newpage
 
@@ -142,6 +143,7 @@ zdlkjgblkjgblsjkgnlsjkgn
 
 \input{CAPITULOS/introduccion}
 \input{CAPITULOS/falso_vacio_mecanica_cuantica}
+\input{CAPITULOS/falso_vacio_qft}
 \input{CAPITULOS/conclusiones}
 
 \printbibliography

@@ -105,7 +105,13 @@ sorting = none
 \subsection{Integral de camino euclideana}
 
 \begin{itemize}
+
+\item Como en la barrera la energia total es menor que el potencial, la energia cinetica seria negativa y la velocidad seria imaginaria, como si fuera la derivada de $x$ respecto a un tiempo imaginario. Esta es la motivacion para aplicar metodos euclideanos \cite{weinberg2012classical}.	
+	
 \item  $\tau$ no es un tiempo, sino una parametrizacion particular del camino favorecido para el tunelamiento a través del espacio de configuracion \cite{weinberg2012classical}. 
+
+\item En el limite de $T$ grande,  $I$ esta dominado por la contribucion de los estados con la menor energia. Entonces, podemos hallar estas energias evaluando la integral de camino para $T$ grande y extrayendo las exponenciales dominantes \cite{weinberg2012classical}. 
+
 \end{itemize}
 
 \subsection{Bounce}
@@ -118,14 +124,141 @@ sorting = none
 
 \end{itemize}
 
+\subsubsection{Modo cero}
+
+Denominemos como $x_B \qty(\tau - \tau_0)$ al bounce desplazado cuyo centro se encuentra en $\tau_0$. Este se puede obtener del bounce original centrado en $\tau = 0$ mediante una translación temporal dada por la transformación
+\begin{equation}
+x_B \qty(\tau - \tau_0) = e^{-\tau_0 \dv{\tau}} x_B \qty(\tau),
+\end{equation}
+o de manera infinitesimal
+\begin{equation} \label{eq:bounce_inf}
+x_B \qty(\tau - \tau_0) \approx x_B \qty(\tau) - \tau_0 \dv{x_B \qty(\tau)}{\tau}.
+\end{equation}
+Como $x_B \qty(\tau - \tau_0)$ también es una trayectoria clásica es solución de la ecuación de movimiento,
+\begin{align}
+\dv[2]{\tau}x_B \qty(\tau - \tau_0) - V'(x_B \qty(\tau - \tau_0)) &= 0 \\
+\dv[2]{\tau} \qty(x_B \qty(\tau) - \tau_0 \dv{x_B \qty(\tau)}{\tau}) - V'\qty(x_B \qty(\tau) - \tau_0 \dv{x_B \qty(\tau)}{\tau}) &= 0.
+\end{align}
+Expandiendo el segundo término a primer orden y reordenando,
+\begin{align}
+\qty(\dv[2]{x_B \qty(\tau)}{\tau} - V'\qty(x_B \qty(\tau))) - \tau_0 \qty(\dv[2]{\tau} - V''\qty(x_B \qty(\tau)))\dv{x_B \qty(\tau)}{\tau} &= 0 
+\end{align}
+El primer término se anula puesto que el bounce es solución de la ecuación de movimiento, por lo que volvemos a obtener el resultado de la ecuación \eqref{eq:eom_modo_cero}. Con esto, hemos justificado la existencia del modo cero a partir de la simetría del sistema. 
+
+Para solucionar el problema al calcular \eqref{eq:integral_0}, reemplazaremos $c_0$ por una coordenada colectiva relacionada con la simetría, es decir, $\tau_0$. %método conocido como coordenada colectiva. 
+Expandamos la trayectoria alrededor de $x_B \qty(\tau - \tau_0)$ 
+\begin{equation}
+x \qty(\tau) = x_B \qty(\tau - \tau_0) + \xi\qty(\tau) 
+\end{equation}
+Aproximando $x_B \qty(\tau - \tau_0)$ por \eqref{eq:bounce_inf}
+\begin{equation} \label{eq:modo0_aprox 1}
+x \qty(\tau) \approx x_B \qty(\tau) - \tau_0 \dv{x_B \qty(\tau)}{\tau} + \xi\qty(\tau)
+\end{equation}
+Tambien podemos hacerlo alrededor del bounce original $x_B \qty(\tau)$. Separando el modo cero explícitamente
+\begin{align}
+x \qty(\tau) &= x_B \qty(\tau) + c_0\eta\qty(\tau) + \sum_{\lambda \neq 0} c_\lambda\eta_\lambda\qty(\tau) \\
+&= x_B \qty(\tau) + c_0 B^{-1/2} \dv{x_B}{\tau} + \sum_{\lambda \neq 0} c_\lambda\eta_\lambda\qty(\tau) \label{eq:modo0_aprox 2}
+\end{align}
+Comparando \eqref{eq:modo0_aprox 1} con \eqref{eq:modo0_aprox 2} obtenemos el jacobiano del cambio de variable
+\begin{equation} \label{eq:jacobiano}
+\qty|\dv{c_0}{\tau_0}| = B^{1/2}
+\end{equation}
+Una derivación rigurosa de este resultado se puede hacer usando el truco de Faddeev-Popov \cite{kleinert2009path, rubakov2009classical, andreassen2017precision}.
+
+Al hacer el cambio de variable, integramos sobre un intervalo de timepo euclideano finito, de $-T/2$ a $T/2$. La contribución del bounce a la amplitud de transición es entonces
+\begin{align}
+I_1 &= e^{-B/\hbar} \int_{-T/2}^{T/2} \qty(\frac{B}{\sqrt{2\pi \hbar}})^{1/2}\dd{\tau_0} \prod_{\lambda \neq 0} \int  \frac{\dd{c_\lambda}}{\sqrt{2\pi \hbar}} e^{-\lambda c_\lambda^2/2\hbar} \\
+&= \qty(\frac{B}{\sqrt{2\pi \hbar}})^{1/2} \qty[ \text{det}'\left(-\dv[2]{\tau} + V''\qty(x_B) \right) ]^{-1/2} Te^{-B/\hbar}
+\end{align}
+donde la prima en la determinante significa que se ha excluido el autovalor igual a cero. 
+
+\subsubsection{Modo negativo}
+
+\begin{itemize}
+
+\item Consideremos un secuencia de caminos parametrizados por una variable $\alpha$. La solución trivial $x\qty(\tau) = x_+$ corresponde a $\alpha = 0$ y el bounce a $\alpha = 1$. A medida que $\alpha$ crece a valores mayores a 1, el bounce se deforma y una parte de la trayectoria se encuentra en la zona del verdadero vacío, haciendo que la acción se vuelva cada vez más negativa \cite{kleinert2009path}. 
+
+\item $S$ tiene un máximo en $\alpha = 1$. El modo negativo es proporcional a la curvatura negativa en el máximo \cite{kleinert2009path}. Como es único, la determinante del resto de autovalores es positiva y no influencia el proceso de continuación analítica. 
+
+\item Para calcular $\Gamma$ tenemos que modificar la integral de camino para que sea a través del contorno de máximo descenso que pasa por el FV, evitando el shot. La parte imaginario a través de este contorno es igual a 1/2 la parte imaginaria a lo largo del contorno de máximo descenso que pasa por el bounce \cite{andreassen2017precision}.
+
+\item La parte imaginaria que buscamos viene de aplicar el método de máximo descenso a la acción euclideana a lo largo de la familia de trayectorias que pasan por el punto estacionario del FV \cite{andreassen2017precision}.  
+
+%El origen de esta divergencia se encuentra en el hecho de haber pretendido calcular un autovalor de energía que no pertenece al espectro del hamiltoniano \cite{callan1977fate}. %La energía del estado metaestable tiene una parte imaginaria mientras que todos los autovalores del hamiltoniano son reales por ser este hermítico. %,.
+%Normalmente, la amplitud de transición no contiene una parte imaginaria. Sin embargo, adquiere una por continuación analítica. 
+
+%Sabemos que para $\lambda$ positivo,
+%\begin{equation}
+%	 \int \frac{\dd{c_\lambda}}{\sqrt{2\pi \hbar}} e^{-\lambda c_\lambda^2/2\hbar} = \lambda^{-1/2}.
+%\end{equation}
+%Si hacemos 
+
+%Para poder calcular la integral, parametricemos todas las trayectorias 
+%Introduzcamos el parámetro $\alpha$
+
+%\begin{equation}
+%	S\qty[x\qty(\tau)] \rightarrow S\qty[x\qty(\tau), \alpha]
+%\end{equation}
+%Como el modo negativo es único, podemos entender la solución a la divergencia de la amplitud de transición a partir del análisis de la siguiente integral unidimensional \cite{weinberg2012classical}
+%\begin{equation} \label{eq:J}
+%	%J \equiv 
+%	\int_{-\infty}^{+\infty} \frac{\dd{\alpha}}{\sqrt{2\pi \hbar}} e^{-S\qty(\alpha)/\hbar}
+%\end{equation}
+%donde $\alpha$ es una variable real análoga a $c_{-1}$ y $S\qty(\alpha)$ es análoga a la acción euclideana. 
+%%y tomamos inicialmente al contorno $C$ como la recta real 
+%
+%Siguiendo el trabajo de Callan y Coleman \cite{callan1977fate}, consideremos un contorno en el espacio de trayectorias $x\qty(\alpha, \tau)$ %parametrizada por $\alpha$%  de 
+%parametrizado por $\alpha$ de tal manera que $x\qty(0, \tau) = x_{\text{FV}}\qty(\tau)$
+%%$\alpha = 0$ se corresponde con $x_{\text{FV}}$ 
+%y $x\qty(1, \tau) = x_{B}\qty(\tau)$ y su tangente en $\alpha = 1$ sea igual al modo negativo. 
+%%De esta manera garantizamos que las trayectorias pertenecientes no cuenten con un modo negativo. 
+%%con el bounce. 
+%Las diversas trayectorias a lo largo de esta curva se encuentran ilustradas en la figura \ref{fig:trayectorias}. 
+%%Tal como habíamos calculado anteriormente, 
+%Empezando en $\alpha = 0$, notamos que $S(\alpha)$ va aumentando a lo largo del contorno hasta llegar a $\alpha = 1$, a partir del cual empieza a disminuir puesto que las trayectorias pasan cada vez más tiempo en la región donde $V\qty(x)$ es negativa \cite{callan1977fate}, por la que la integral en \eqref{eq:J} no está bien definida \cite{paranjape2017theory}. 
+%%tal como está definida, es divergente. . 
+%Este comportamiento se puede apreciar claramente en la figura \ref{fig:accion}.
+%
+%\begin{figure}[h]
+%	\begin{subfigure}[t]{0.5\textwidth}
+%		\centering
+%		\includegraphics[scale= 0.3]{FIGURAS/trayectorias}
+%		\caption{}
+%		\label{fig:trayectorias}
+%	\end{subfigure}
+%	\hfill
+%	\begin{subfigure}[t]{0.5\textwidth}
+%		\centering
+%		\includegraphics[scale= 0.3]{FIGURAS/accion}
+%		\caption{}
+%		\label{fig:accion}
+%	\end{subfigure}
+%	\caption{(a) Algunas de las trayectorias a lo largo del contorno en el espacio de trayectorias parametrizada por $\alpha$. (b) Comportamiento de $S\qty(\alpha)$ a lo largo del mismo contorno. En ambas figuras, $z\qty(\alpha, \tau)$ se corresponde con $x\qty(\alpha, \tau)$ \cite{paranjape2017theory}.}
+%\end{figure}
+%
+%%Por otro lado, sabemos que al ser una trayectoria clásica, %el bounce es un mínimo, por lo que en realidad el bounce es un punto de silla. 
+%
+%%tal que $S\qty(\alpha)$ tiene el mismo comportamiento que la acción euclideana a lo largo de esta
+%
+%Para solucionar este problema es necesario deformar el contorno de integración al plano complejo. A partir de $\alpha = 1$ se sigue el contorno de máximo descenso (\emph{steepest descent}) de $-S\qty(\alpha)$
+%
+%Generalizando el análisis anterior a la integral de camino euclideana
+
+\end{itemize}
+
 \subsection{Multibounce}
 
 \begin{itemize}
 	
-	\item Debido a la invariancia ante translaciones temporales en el caso $T \rightarrow \infty$ existe una familia de configuraciones dependientes de un parámetro que corresponden a bounces ocurriendo en todo tiempo en $\tau_0 \in \qty[-T/2, T/2]$. Su acción es exponencialmente cerca a $S_B$. Su degeneración es $T$. Tambien existen $n$ bounces separados por un tiempo con acción  exponencialmente cerca a $nS_B$ . Su degeneración es $T^n/n!$ al ser analogos a particulas identicas \cite{paranjape2017theory}.
+	\item Debido a la invariancia ante translaciones temporales en el caso $T \rightarrow \infty$ existe una familia de configuraciones dependientes de un parámetro que corresponden a bounces ocurriendo en todo tiempo en $\tau_0 \in \qty[-T/2, T/2]$. Su acción es exponencialmente cerca a $S_B$. Su degeneración es $T$. También existen $n$ bounces separados por un tiempo con acción  exponencialmente cerca a $nS_B$ . Su degeneración es $T^n/n!$ al ser análogos a partículas identicas \cite{paranjape2017theory}.
 	
 \end{itemize}
 
+\section{Decaimiento del falso vacío en la Teoría Cuántica de Campos}
+
+\begin{itemize}
+\item La ocurrencia de los modos cero esta asociado con el hecho de que el centro del bounce puede localizarse en cualquier punto del espaciotiempo euclideano \cite{rubakov2009classical}. 
+\end{itemize}
 
 \section{Conclusiones}
 

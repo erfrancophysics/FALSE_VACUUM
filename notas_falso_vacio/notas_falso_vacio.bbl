@@ -137,8 +137,8 @@
       \strng{authorbibnamehash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
       \strng{authornamehash}{5a9bd8c1e56a632b8e6e9feb5af4c8e4}
       \strng{authorfullhash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -151,6 +151,34 @@
       \field{year}{2017}
       \field{pages}{085011}
       \range{pages}{1}
+    \endentry
+    \entry{rubakov2009classical}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=61b7580d70058c032f02ed6067cc3483}{%
+           family={Rubakov},
+           familyi={R\bibinitperiod},
+           given={Valery},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{61b7580d70058c032f02ed6067cc3483}
+      \strng{fullhash}{61b7580d70058c032f02ed6067cc3483}
+      \strng{bibnamehash}{61b7580d70058c032f02ed6067cc3483}
+      \strng{authorbibnamehash}{61b7580d70058c032f02ed6067cc3483}
+      \strng{authornamehash}{61b7580d70058c032f02ed6067cc3483}
+      \strng{authorfullhash}{61b7580d70058c032f02ed6067cc3483}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Classical theory of gauge fields}
+      \field{year}{2009}
     \endentry
     \entry{paranjape2017theory}{book}{}
       \name{author}{1}{}{%
@@ -170,8 +198,8 @@
       \strng{authorbibnamehash}{06528b4cf51595378ecb7bfedc0efa8b}
       \strng{authornamehash}{06528b4cf51595378ecb7bfedc0efa8b}
       \strng{authorfullhash}{06528b4cf51595378ecb7bfedc0efa8b}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
