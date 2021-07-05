@@ -2,127 +2,225 @@
 
 %\section{Soluciones a la ecuación de movimiento}
 
-\section{Tasa de decaimiento del falso vacío en la Teoría Cuántica de Campos}
-
-\section{Bounces en la Teoría Cuántica de Campos}
-
-%Habiendo desarrollado el formalismo 
-Si bien al momento de calcular la tasa de decaimiento del falso vacío en la Teoría Cuántica de Campos del campo escalar haremos uso del formalismo desarrollado en el capítulo anterior adaptado, %mediante analogía con lo estudiado 
-previamente debemos plantear el problema clásico correspondiente con sus respectivas condiciones de frontera y encontrar las soluciones a la ecuación de movimiento.  
+\section{Tasa de decaimiento del falso vacío por unidad de volumen
+	%en la Teoría Cuántica de Campos
+}
 
 Consideremos el campo escalar $\phi\qty(x)$ cuya acción $S\qty[\phi\qty(x)]$ está dada por %\footnote{$x=\qty(t, x, y, z)$ es el cuadrivector posición.} 
 \begin{equation} \label{eq:accion_qft}
-S\qty[\phi\qty(x)] = \int \dd[4]{x} \qty[\frac{1}{2}\qty(\pdv{\phi}{t})^2 - \frac{1}{2}\qty(\grad{\phi})^2 - U\qty(\phi) ].
+S\qty[\phi\qty(x)] = \int \dd[4]{x} \qty[\frac{1}{2}\qty(\pdv{\phi}{t})^2 - \frac{1}{2}\qty(\grad{\phi})^2 - U\qty(\phi) ]
 \end{equation}
-La densidad de potencial $U\qty(\phi)$ está dado en la figura \ref{fig:potencial_qft} 
-%\footnote{$U\qty(\phi)$ es en realidad la densidad de potencial pero por conveniencia lo llamaremos simplemente potencial al no haber confusión entre ambos términos.}
-. Cuenta con dos mínimos $\phi_-$ y $\phi_+$, de los cuales este último es un falso vacío por lo que, al igual que en la Mecánica Cuántica, 
+donde el potencial 
+%\footnote{$U\qty(\phi)$ es la densidad de potencial pero por comodidad no usaremos esta denominación.} 
+$U\qty(\phi)$ está dado en la figura \ref{fig:potencial_qft}. Cuenta con dos mínimos $\phi_-$ y $\phi_+$, de los cuales este último es un falso vacío por lo que, al igual que en la Mecánica Cuántica, 
 %revisar terminos: "se encuentre" o "tenga una configuracion"
-esperamos que, si el campo se encuentra inicialmente en $\phi_+$, 
+esperamos que, si la configuración inicial del campo es $\phi_+$, 
 exista una cierta probabilidad de que
 pueda decaer a $\phi_-$ por tunelamiento. Resulta conveniente añadirle una constante 
 %a $U\qty(\phi)$ 
-de tal manera que $U\qty(\phi_+) = 0$ y la energía del falso vacío sea finita \cite{andreassen2017precision} 
-\begin{figure}[b]
+de tal manera que $U\qty(\phi_+) = 0$ y la energía del campo en el falso vacío sea finita \cite{andreassen2017precision}. 
+\begin{figure}[t]
 	\centering
 	\includegraphics[scale=0.25]{FIGURAS/potencial_qft}
 	\caption{Potencial en el que se encuentra el campo escalar dado por la acción \eqref{eq:accion_qft}. Notamos que cuenta con un falso vacío en $\phi_+$ \cite{callan1977fate}.}
 	\label{fig:potencial_qft}
 \end{figure}
 
-Aplicando el cambio de variable \eqref{eq:tiempo_im} en la acción \eqref{eq:accion_qft} obtenemos la accion euclideana del campo escalar $S_E\qty[\phi\qty(x)]$
-\begin{equation}
-S_E\qty[\phi\qty(x)] = \int \dd{\tau} \dd[3]{x} \qty[\frac{1}{2}\qty(\pdv{\phi}{\tau})^2 + \frac{1}{2}\qty(\grad{\phi})^2 + U\qty(\phi)] 
+A pesar de esto, la energía del campo en el verdadero vacío es infinita debido a que $U\qty(\phi_-)$ es distinto de cero e integramos sobre todo el espacio \cite{paranjape2017theory}. De la misma manera, la barrera de potencial a través de la cual se debe dar el tunelamiento, también es infinita, por lo que el decaimiento del falso vacío solo puede darse en ciertas regiones del espacio. 
+%Como esta es arbitraria, la tasa de decaimiento es proporcional al volumen y por lo tanto, infinita \cite{weinberg2012classical}.  
+%añadir algo sobre que la diferencia de energia respecto al falso vacio es finita
+Es por esto que la cantidad físicamente relevante a calcular es la tasa de decaimiento del falso vacío por unidad de volumen $\Gamma/V$ \cite{weinberg2012classical} de la forma
+\begin{equation} \label{eq:gamma_volumen_WKB}
+\frac{\Gamma}{V} = Ae^{-B/\hbar}\qty(1 + \order{\hbar}),
 \end{equation}
+% serán discutidas más adelante. 
+donde $A$ y $B$ son coeficientes a determinar mediante la extensión del formalismo desarrollado en el capítulo anterior a la Teoría Cuántica de Campos del campo escalar. 
 
+
+
+\section{Bounces en la Teoría Cuántica de Campos}
+
+%Habiendo desarrollado el formalismo 
+Si bien al momento de calcular $\Gamma/V$ haremos uso del formalismo desarrollado en el capítulo anterior,
+%adaptado, mediante analogía con lo estudiado 
+previamente debemos plantear el problema clásico correspondiente con sus respectivas condiciones de frontera y encontrar 
+%las configuraciones clásicas  
+las configuraciones clásicas del campo que no son más que las soluciones a la ecuación de movimiento.  
+
+Al aplicar el cambio de variable a tiempo imaginario \eqref{eq:tiempo_im} en la acción \eqref{eq:accion_qft} tenemos que $\phi = \phi\qty(\tau, \vb{x})$ \footnote{A partir de ahora trabajaremos exclusivamente en tiempo euclideano. 
+%en lo que resta de la sección 
+%por lo que  omitiremos la dependencia funcional de $\phi = \phi\qty(\tau, \vb{x})$ en la medida de lo posible.
+} 
+y su acción euclideana $S_E\qty[\phi\qty(\tau, \vb{x})]$ está dada por
 \begin{equation}
-\qty(\pdv[2]{\tau} + \grad{}^2)\phi = U'\qty(\phi)
+S_E\qty[\phi\qty(\tau, \vb{x})] = \int \dd{\tau} \dd[3]{x} \qty[\frac{1}{2}\qty(\pdv{\phi}{\tau})^2 + \frac{1}{2}\qty(\grad{\phi})^2 + U\qty(\phi)]
 \end{equation}
-donde la prima indica la derivada respecto a $\phi\qty(x)$.
-
-\begin{equation}
-\lim_{\tau \rightarrow \pm\infty} \phi\qty(\tau, \vb{x}) = \phi_+
+junto con la ecuación de movimiento correspondiente
+\begin{equation} \label{eq:eom_phi}
+\qty(\pdv[2]{\tau} + \grad{}^2)\phi = U'\qty(\phi),
 \end{equation}
+donde la prima indica la derivada respecto a $\phi\qty(\tau, \vb{x})$. 
 
-\begin{equation}
-\pdv{\phi}{\tau}\qty(0, \vb{x}) = 0
+Como estamos interesados en las configuraciones clásicas,
+%puesto que este es un punto estacionario de la acción. Inicialmente el campo se encuentra en el falso vacío
+debemos establecer las condiciones de frontera adecuadas para la ecuación de movimiento \eqref{eq:eom_phi}. Sabemos que la solución no trivial relevante en el decaimiento del falso vacío es el bounce. Es decir, buscamos una configuración que parta de $\phi_+$, atraviese la barrera hasta llegar al punto de retorno y finalmente, regrese de vuelta a $\phi_+$.  De esta manera, podemos trasladar todas las consideraciones estudiadas anteriormente en la Mecánica Cuántica a la Teoría Cuántica de Campos del campo escalar. 
+
+Tenemos entonces la primera condición de frontera 
+%Bajo las mismas consideraciones 
+\begin{equation} \label{eq:cond_frontera_qft1}
+\lim_{\tau \rightarrow \pm\infty} \phi\qty(\tau, \vb{x}) = \phi_+,
 \end{equation}
-
+%donde hemos establecido $\tau_i = -\infty$ y $\tau_f = +\infty$ puesto que esperamos obtener el bounce en el límite . %puesto que este es el límite en el que estamos interesados. 
+%que nos asegura que tanto la configuración inicial como final del campo es el falso vacío. 
+la cual establece que el
+%la configuración del 
+campo permanece en el falso vacío durante un tiempo euclideano lo suficientemente largo antes y después de atravesar la barrera. Cabe resaltar que este comportamiento simétrico es debido al hecho de que la acción es invariante ante una inversión temporal. Como hemos establecido la condición de frontera \eqref{eq:cond_frontera_qft1} para un tiempo euclideano que tiende al infinito, 
+%por conveniencia, 
+podemos fijar el instante en el que el campo llega al punto de retorno en $\tau = 0$,
+\begin{equation} \label{eq:cond_frontera_qft2}
+\pdv{\phi}{\tau}\qty(0, \vb{x}) = 0,
+\end{equation}
+%Podemos hacer esto debido al límite que estamos considerando.
 %\begin{equation}
 %	\mathcal{E} = \frac{1}{2}\qty(\pdv{\phi}{\tau})^2 - \frac{1}{2}\qty(\grad{\phi})^2 - U\qty(\phi)
 %\end{equation}
-
-Como $U\qty(\phi_+) = 0$
-
+de tal manera que la energía cinética del campo sea igual a cero una vez que haya cruzado la barrera. 
+Por último, la acción del bounce debe ser finita. Caso contrario, el coeficiente $B$ en la ecuación \eqref{eq:gamma_volumen_WKB}, se anularía \cite{lee2005fate}. Como $U\qty(\phi_+) = 0$,
 %\begin{equation}
 %\mathcal{E} = \frac{1}{2}\qty(\pdv{\phi}{\tau})^2 - \frac{1}{2}\qty(\grad{\phi})^2 - U\qty(\phi)
 %\end{equation}
-
-\begin{equation}
-\lim_{\qty|\vb{x}| \rightarrow \pm\infty} \phi\qty(\tau, \vb{x}) = \phi_+
+\begin{equation} \label{eq:cond_frontera_qft3}
+\lim_{\qty|\vb{x}| \rightarrow \pm\infty} \phi\qty(\tau, \vb{x}) = \phi_+,
 \end{equation}
+el campo se encuentra en el falso vacío a grandes distancias \cite{Masoumi:2015psa}. %\subsection{Soluciones a la ecuación de movimiento}
+%Habiendo establecido las condiciones de frontera
 
-%\subsection{Soluciones a la ecuación de movimiento}
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.4]{FIGURAS/nucleacion_burbujas}
+	\caption{Proceso de nucleación de una burbuja de falso vacío \cite{Masoumi:2015psa}.}
+	\label{fig:nucleacionburbujas}
+\end{figure}
+Analicemos cualitativamente el comportamiento del bounce. Inicialmente, el campo se encuentra en el falso vacío a lo largo de todo el espacio.
+%, tal como se indica en la primera condición de frontera \eqref{eq:cond_frontera_qft1}. 
+En un cierto instante de tiempo euclideano y en una cierta región del espacio, el campo decae al verdadero vacío mientras que lejos de este, permanece inafectado. Es decir, aparece una burbuja de verdadero vacío 
+%tal como se puede ver en la figura , %insertar figura
+que empieza a crecer hasta alcanzar su tamaño máximo en $\tau = 0$, a partir del cual se encoge hasta desaparecer, regresando finalmente a la configuración inicial. Todo este proceso se ilustra en la figura \eqref{fig:nucleacionburbujas}
+%Este proceso 
+y es análogo al proceso de nucleación de burbujas de vapor en la Mecánica Estadística \cite{coleman1977fate}, razón por la cual al bounce también se le denomina burbuja. 
 
-\begin{equation}
-	\rho^2 = \tau^2 + \qty|\vb{x}|^2
+Como es de esperarse, la ecuación de movimiento \eqref{eq:eom_phi} cuenta con una solución trivial que, de acuerdo con la condición de frontera en \eqref{eq:cond_frontera_qft1}, está dada por
+\begin{equation} \label{eq:phi_trivial}
+	\phi_{\text{FV}}\qty(\tau, \vb{x}) = \phi_+.
 \end{equation}
+%Tal como se expuso en el párrafo anterior, las soluciones no triviales 
 
+Las ecuación de movimiento \eqref{eq:eom_phi}, las condiciones de frontera \eqref{eq:cond_frontera_qft1} y \eqref{eq:cond_frontera_qft3} y la interpretación del bounce como una burbuja de verdadero vacío, sugieren asumir que este último cuenta con una simetría $O\qty(4)$, es decir, es invariante ante rotaciones del espaciotiempo euclideano o esféricamente simétrico \cite{weinberg2012classical}. Para una gran cantidad de potenciales, esto siempre es posible 
+%encontrar un bounce de esta forma 
+\cite{coleman1978action}. 
+
+Introduzcamos la distancia euclideana
 \begin{equation}
-\lim_{\rho \rightarrow \pm\infty} \phi\qty(\rho) = \phi_+
+	\rho^2 \equiv \tau^2 + \vb{x}^2
 \end{equation}
-
-\begin{equation}
-\eval{\pdv{\phi\qty(\rho)}{\tau}}_{\tau = 0} = \eval{\qty(\dv{\phi}{\rho}\dv{\rho}{\tau})}_{\tau = 0}
+de tal manera que, de acuerdo con lo establecido anteriormente,  $\phi = \phi\qty(\rho)$. 
+%mientras que \eqref{eq:cond_frontera_qft2},
+%\begin{equation}
+%\eval{\pdv{\phi\qty(\rho)}{\tau}}_{\tau = 0} = 0.
+%\end{equation}
+%Como $\rho = \rho(\vb{x}, \tau)$, tenemos que
+%\begin{equation}
+%\pdv{\phi\qty(\rho)}{\tau} = \dv{\phi}{\rho}\pdv{\rho}{\tau}.
+%\end{equation}
+%
+%\begin{align}
+%	2\rho \pdv{\rho}{\tau} &= 2\tau \\
+%	\pdv{\rho}{\tau} &= \frac{\tau}{\rho}
+%\end{align}
+%\begin{equation}
+%\eval{\dv{\phi\qty(\rho)}{\tau}}_{\rho = 0} = 0
+%\end{equation}
+%\begin{equation}
+%\eval{\dv{\phi}{\rho}}_{\rho = 0} = 0
+%\end{equation}
+Resulta conveniente renombrar $\tau = x_4$ de tal manera que 
+\begin{equation} \label{eq:rho_xi}
+	\rho^2 = \sum_{i = 1}^{4} x_i^2.
 \end{equation}
-
+%donde $\vb{x} = \qty(x, y, z) = \qty(x_1, x_2, x_3)$. 
+De acuerdo con esta notación, la ecuación de movimiento \eqref{eq:eom_phi} está dada por
+\begin{equation} \label{eq:eom_xi}
+\sum_{i = 1}^{4} \pdv[2]{\phi\qty(\rho)}{x_i} = U'\qty(\phi).
+\end{equation}
+Escrita de esa manera obtendremos 
+%fácilmente la ecuación de movimiento para 
+la correspondiente a $\phi\qty(\rho)$. 
+%nos facilitará el cambio de variable. 
+Haciendo uso de la regla de la cadena, 
+\begin{equation} \label{eq:dv_phi_rho}
+	\pdv{\phi\qty(\rho)}{x_i} = \dv{\phi}{\rho}\pdv{\rho}{x_i}.
+%	&= \frac{x_i}{\rho}\dv{\phi}{\rho}.
+\end{equation}
+Derivando \eqref{eq:rho_xi} respecto a $x_i$,
 \begin{align}
-	2\rho \pdv{\rho}{\tau} &= 2\tau \\
-	\pdv{\rho}{\tau} &= \frac{\tau}{\rho}
-\end{align}
-
-\begin{equation}
-\eval{\pdv{\phi\qty(\rho)}{\tau}}_{\tau = 0} = 0
-\end{equation}
-
-\begin{equation}
-\eval{\dv{\phi}{\rho}}_{\rho = 0} = 0
-\end{equation}
-
-Renombremos $\tau = x_4$
-
-\begin{equation}
-	\rho^2 = \sum_{i = 1}^{4} x_i^2
-\end{equation}
-
-\begin{align}
-2\rho \pdv{\rho}{x_i} &= 2x_i \\
+2\rho \pdv{\rho}{x_i} &= 2x_i \\ \label{eq:dv_rho_xi}
 \pdv{\rho}{x_i} &= \frac{x_i}{\rho}
 \end{align}
-
-\begin{align}
-\pdv{\phi\qty(\rho)}{x_i} &= \dv{\phi}{\rho}\pdv{\rho}{x_i} \\
-&= \frac{x_i}{\rho}\dv{\phi}{\rho}
-\end{align}
-
+y reemplazando esta última
+%\eqref{eq:dv_rho_xi} 
+en \eqref{eq:dv_phi_rho}, 
+\begin{equation} \label{eq:dv_phi_rho2}
+\pdv{\phi\qty(\rho)}{x_i} = \frac{x_i}{\rho}\dv{\phi}{\rho}.
+\end{equation}
+Derivando la ecuación anterior
+%\eqref{eq:dv_phi_rho2} 
+respecto a $x_i$ y usando nuevamente \eqref{eq:dv_rho_xi},
 \begin{align}
 	\pdv[2]{\phi\qty(\rho)}{x_i} &= \frac{x_i}{\rho}\dv[2]{\phi}{\rho}\pdv{\rho}{x_i} + \qty(\frac{1}{\rho} - \frac{x_i}{\rho^2}\pdv{\rho}{x_i})\dv{\phi}{\rho} \\
-	&= \frac{x_i^2}{\rho^2}\dv[2]{\phi}{\rho} + \frac{1}{\rho}\qty(1 - \frac{x_i^2}{\rho^2})\dv{\phi}{\rho} 
+	&= \frac{x_i^2}{\rho^2}\dv[2]{\phi}{\rho} + \frac{1}{\rho}\qty(1 - \frac{x_i^2}{\rho^2})\dv{\phi}{\rho}. 
 \end{align}
-
+Por último, sumamos las derivadas,
 \begin{align}
-\sum_{i = 1}^{4} \pdv[2]{\phi\qty(\rho)}{x_i} &=  \frac{\sum_{i = 1}^{4} x_i^2}{\rho^2}\dv[2]{\phi}{\rho} + \frac{1}{\rho}\qty(4 - \frac{\sum_{i = 1}^{4} x_i^2}{\rho^2})\dv{\phi}{\rho} 
+\sum_{i = 1}^{4} \pdv[2]{\phi\qty(\rho)}{x_i} &=  \frac{\sum_{i = 1}^{4} x_i^2}{\rho^2}\dv[2]{\phi}{\rho} + \frac{1}{\rho}\qty(4 - \frac{\sum_{i = 1}^{4} x_i^2}{\rho^2})\dv{\phi}{\rho}, 
 \end{align}
-
-\begin{equation}
-	\dv[2]{\phi}{\rho} + \frac{3}{\rho}\dv{\phi}{\rho} = U'\qty(\phi)
+y simplificamos haciendo uso de \eqref{eq:rho_xi} para obtener finalmente la ecuación de movimiento 
+%en términos de $\phi\qty(\rho)$
+\begin{equation} \label{eq:eom_rho}
+	\dv[2]{\phi}{\rho} + \frac{3}{\rho}\dv{\phi}{\rho} = U'\qty(\phi).
 \end{equation}
+
+Las condiciones de frontera \eqref{eq:cond_frontera_qft1} y \eqref{eq:cond_frontera_qft3} se reducen a 
+\begin{equation} \label{eq:cond_frontera_rho1}
+\lim_{\rho \rightarrow \pm\infty} \phi\qty(\rho) = \phi_+.
+\end{equation}
+Con la finalidad de evitar que las soluciones cuenten con una singularidad en el origen, requerimos que \cite{coleman1977fate}
+\begin{equation}
+	\eval{\dv{\phi}{\rho}}_0 = 0.
+\end{equation}
+
+La ecuación de movimiento \eqref{eq:eom_rho} puede ser interpretada como la ecuación de movimiento de una partícula 
+
+%analisis clasico de la eom
+%argumento overshoot-undershoot de la existencia de la solucion
 
 \subsection{Aproximación de la pared delgada}
 
-\section{Cálculo de la tasa de decaimiento}
+El campo dentro de la burbuja, en realidad corresponde al punto de retorno y no al verdadero vacío \cite{lee2005fate}. 
+
+\section{Cálculo de la tasa de decaimiento del falso vacío por unidad de volumen}
+
+Habiendo obtenido las configuraciones clásicas relevantes en el decaimiento del falso vacío, procedemos al cálculo de la tasa de decaimiento del falso vacío por unidad de volumen $\Gamma/V$. Siguiendo el formalismo de Coleman y Callan, partimos de la amplitud de transición 
+\begin{equation}
+I = \bra{\phi_f}e^{-HT/\hbar}\ket{\phi_i} = \int \mathcal{D}\phi \, e^{-S_E\qty[\phi\qty(\vb{x},\tau)]/\hbar}.
+\end{equation}
+De acuerdo con la condición de frontera \eqref{eq:cond_frontera_qft1}, $\phi_i = \phi_f = \phi_+$.
+
+Las burbujas de falso vacío pueden aparecer en cualquier región del espacio, es decir, son invariantes ante translaciones espaciales \cite{coleman1977fate}. 
 
 Es posible demostrar que el modo negativo es único para todos los casos de interés \cite{coleman1977fate, coleman1988quantum}
 
 \section{El destino del falso vacío}
 
+\subsection{Implicaciones cosmológicas}
+
+\subsection{Aplicaciones}

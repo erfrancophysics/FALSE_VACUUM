@@ -7,7 +7,7 @@
 %	\Gamma = A e^{-B/\hbar} \qty(1 + \order{\hbar})
 %\end{equation}
 
-\section{Tasa de decaimiento}
+\section{Tasa de decaimiento del falso vacío}
 
 %Tal como se discutió en el capítulo anterior, una partícula que se encuentra inicialmente en la región del falso vació puede decaer debido al efecto túnel. 
 Un estado concentrado en la región del falso vacío no puede ser un autoestado de energía, puesto que estos, al no poseer dependencia temporal, no pueden decaer \cite{andreassen2017precision}. Podríamos expandirlo en una combinación lineal de estos autoestados, pero es más conveniente considerarlo como un estado fundamental metaestable cuya energía adquiere una parte imaginaria debido al tunelamiento  \cite{weinberg2012classical, paranjape2017theory, rubakov2009classical}. 
@@ -88,7 +88,7 @@ B = 2 \int_{x_+}^{p} \dd{x} \sqrt{2V\qty(x)}.
 
 %El objetivo principal de este trabajo es calcular $\Gamma$ a primer orden en $\hbar$ para el estado metaestable de menor energía. Para esto se hará uso de la integral de camino euclideana y la aproximación de punto estacionario siguiendo principalmente el formalismo establecido por Coleman y Callan \cite{coleman1977fate, callan1977fate}. 
 
-Consideremos una partícula que inicialmente se encuentra en la posición $x_i$ en un tiempo $t_i$. La amplitud de transición de esta a una posición final $x_f$ en un tiempo $t_f$ está dada por la integral de camino de Feynman \footnote{La integral de camino normalmente cuenta con una constante de normalización, pero como no es de interés en este trabajo la asumiremos igual a 1.} \cite{feynman2010quantum}
+Consideremos una partícula que inicialmente se encuentra en la posición $x_i$ en un tiempo $t_i$. La amplitud de transición de esta a una posición final $x_f$ en un tiempo $t_f$ está dada por la integral de camino de Feynman \footnote{La integral de camino cuenta con una constante de normalización que debe ser elegida adecuadamente. Como no es de interés en este trabajo la asumiremos igual a 1.} \cite{feynman2010quantum}
 \begin{equation}\label{eq:amplitud}
 \bra{x_f, t_f}\ket{x_i, t_i} = \int \mathcal{D}x \, e^{iS\qty[x \qty(t)]/\hbar},
 \end{equation}
@@ -145,8 +145,9 @@ Por último, en la energía,
 \end{align}
 donde hemos definido la energía euclideana $\mathcal{E}$ como \cite{rubakov2009classical}
 \begin{equation} \label{eq:E_eucli}
-	\mathcal{E}  \equiv \left(\dv{x}{\tau}\right)^2 - V\qty(x)
+	\mathcal{E}  \equiv \left(\dv{x}{\tau}\right)^2 - V\qty(x).
 \end{equation}
+%Como el potencial es independiente del tiempo, la energía euclideana se conserva. 
 
 Al reemplazar \eqref{eq:S_s_e} en \eqref{eq:amplitud}, obtenemos la integral de camino euclideana \cite{das2006field}
 \begin{equation}\label{eq:amplitud_euc}
@@ -176,7 +177,7 @@ la energía del estado metaestable cuenta con una parte imaginaria, a partir de 
 
 Los casos para los cuales es posible calcular la integral de camino de manera exacta son muy pocos y suelen involucrar técnicas matemáticas sofisticadas \cite{feynman2010quantum, das2006field, kleinert2009path}, por lo que usualmente se tiene que recurrir a métodos aproximados. En nuestro caso, haremos uso de la aproximación de punto estacionario (\emph{saddle point approximation} 
 %\footnote{En este trabajo, punto estacionario y punto de silla son sinónimos.}
-) para calcular la integral de camino euclideana en \eqref{eq:amplitud_euc}. 
+) para calcular la integral de camino euclideana en \eqref{eq:Gamma}. 
 
 Al igual que en el cálculo diferencial, los puntos estacionarios de la acción euclideana $S_E\qty[x\qty(\tau)]$ son aquellos que cumplen con la condición
 \begin{equation}\label{eq:minimo}
@@ -272,7 +273,8 @@ I &\approx e^{-S_E^{\textrm{cl}}/\hbar} \int \prod_\lambda \frac{\dd{c_\lambda}}
 %&\approx N e^{-S_E^{\textrm{cl}}/\hbar} \int \prod_\lambda \frac{\dd{c_\lambda}}{\sqrt{2\pi \hbar}} \prod_\lambda e^{-\lambda c_\lambda^2/2\hbar} \\ 
 %\end{equation}
 
-La multiplicación de los autovalores en el último término de \eqref{eq:I_gauss} no es más que la determinante de $\hat{O}$. Con esto, tenemos finalmente que la amplitud de transición en la aproximación de punto estacionario está dada por
+El producto de los autovalores en el último término de \eqref{eq:I_gauss} no es más que la determinante de $\hat{O}$. Con esto, %tenemos finalmente que 
+la amplitud de transición en la aproximación de punto estacionario está dada por
 \begin{equation}\label{eq:Isaddle}
 I = e^{-S_E^{\textrm{cl}} / \hbar} \qty[ \det\left(-\dv[2]{\tau} + V''\qty(x_{\textrm{cl}}) \right) ]^{-1/2} \qty(1 + \order{\hbar}).
 \end{equation}
@@ -339,7 +341,9 @@ su energía euclideana también es nula. %Requeriremos que esta condición se cu
 %es la solución trivial de \eqref{eq:mov_ec} que cumple  \eqref{eq:cond_frontera}.
 
 Analizando el potencial invertido de la figura \ref{fig:potencial_invertido} notamos que es posible encontrar trayectorias clásicas no triviales que atraviesen la barrera del potencial original. Consideremos una partícula que inicia su movimiento en $x_+$. Como el potencial es plano alrededor de este punto, permanece ahí por un largo tiempo, para luego recorrer rápidamente el pozo de potencial invertido hasta llegar al punto de retorno $p$ en un tiempo finito. %0y regresa nuevamente a $x_+$. 
-La invarianza de la acción euclideana ante inversiones temporales  nos permite extender esta trayectoria de vuelta a $x_+$ \cite{weinberg2012classical}. Si los tiempos inicial y final son $\tau = \pm \infty$ respectivamente, obtenemos el bounce \footnote{Mantendremos el nombre en su idioma original por ser el término comúnmente usado en la literatura.}  $x_B\qty(\tau)$ \cite{coleman1977fate}. Su comportamiento se encuentra ilustrado en las figuras \ref{fig:soluciones} y \ref{fig:bounce}. 
+La invarianza de la acción euclideana ante inversiones temporales  nos permite extender esta trayectoria de vuelta a $x_+$ \cite{weinberg2012classical}. Si $\tau_i = -\infty$ y $\tau_f = +\infty$,
+%los tiempos euclideanos inicial y final son $\tau = \pm \infty$ respectivamente
+obtenemos el bounce \footnote{Mantendremos el nombre en l idioma original por ser el término comúnmente usado en la literatura.}  $x_B\qty(\tau)$ \cite{coleman1977fate}. Su comportamiento se encuentra ilustrado en las figuras \ref{fig:soluciones} y \ref{fig:bounce}. 
 %Al igual que para la solución estática, su energía euclideana también es nula. 
 
 \begin{figure}[h]
@@ -367,7 +371,7 @@ Aprovechando el hecho de que el bounce es invariante ante translaciones temporal
 \eval{\dv{x_B}{\tau}}_{\tau = 0} = 0.
 \end{equation}
 %Esta condición tendrá implicaciones importantes más adelante. 
-Como $V\qty(p) = 0$, la energía euclideana del bounce también es nula. De la definición en \eqref{eq:E_eucli}, tenemos que
+Como $V\qty(p) = 0$, la energía euclideana del bounce también es nula debido al principio de conservación de la energía. De la definición en \eqref{eq:E_eucli}, tenemos que
 \begin{equation} \label{eq:K=V}
 \frac{1}{2}\qty(\dv{x_B}{\tau})^2 = V\qty(x_B).
 \end{equation}
@@ -407,7 +411,7 @@ obtenemos finalmente
 \begin{equation}\label{eq:bounce4}
 S_E\qty[x_B\qty(\tau)] = 2 \int_{x_+}^{p} \dd{x} \sqrt{2 V\qty(x)},
 \end{equation}
-donde hemos omitido el subíndice al ya no ser necesario. Notamos que la acción euclideana del bounce es equivalente al coeficiente $B$ en \eqref{eq:B_WKB}, 
+donde hemos omitido el subíndice al ya no ser necesario. Notamos que la acción euclideana del bounce es igual al coeficiente $B$ en la ecuación \eqref{eq:B_WKB}, 
 \begin{equation}
 	B = S_E\qty[x_B\qty(\tau)].
 \end{equation}
@@ -572,7 +576,7 @@ donde la prima en la determinante indica que no se considera el autovalor igual 
 	\label{fig:contorno}
 \end{figure}
 
-\subsection{Contribución de las trayectorias con múltiples bounces}
+\subsection{Trayectorias con múltiples bounces}
 
 Como vimos en la sección \ref{sec:modo_zero}, el bounce no es único y existen otras trayectorias clásicas que también contribuyen a la amplitud de transición. De igual manera, debemos considerar la contribución de aquellas trayectorias que cuenten con un número arbitrario de bounces consecutivos lo suficientemente separados, aunque no sean soluciones exactas de la ecuación de movimiento \cite{weinberg2012classical}. 
 %Además de los podemos tener un bounce seguido de otro, separados por un tiempo suficiente.  

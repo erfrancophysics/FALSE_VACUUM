@@ -37,8 +37,8 @@
       \strng{authorbibnamehash}{75490b33cc945bf2b8065e32cf03fc58}
       \strng{authornamehash}{75490b33cc945bf2b8065e32cf03fc58}
       \strng{authorfullhash}{75490b33cc945bf2b8065e32cf03fc58}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -51,6 +51,32 @@
       \field{year}{1928}
       \field{pages}{805\bibrangedash 806}
       \range{pages}{2}
+    \endentry
+    \entry{Ai:2019dqr}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=5244c9b17f3e24650df257b0604dcbfa}{%
+           family={Ai},
+           familyi={A\bibinitperiod},
+           given={Wen-Yuan},
+           giveni={W\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{fullhash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{bibnamehash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{authorbibnamehash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{authornamehash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{authorfullhash}{5244c9b17f3e24650df257b0604dcbfa}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Aspects of false vacuum decay}}
+      \field{type}{phdthesis}
+      \field{year}{2019}
     \endentry
     \entry{coleman1977fate}{article}{}
       \name{author}{1}{}{%
@@ -70,8 +96,8 @@
       \strng{authorbibnamehash}{482d8709754f85ef0a09f447888369c7}
       \strng{authornamehash}{482d8709754f85ef0a09f447888369c7}
       \strng{authorfullhash}{482d8709754f85ef0a09f447888369c7}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -108,8 +134,8 @@
       \strng{authorbibnamehash}{60c196298bd66a014a57d0c5b1dd26e0}
       \strng{authornamehash}{60c196298bd66a014a57d0c5b1dd26e0}
       \strng{authorfullhash}{60c196298bd66a014a57d0c5b1dd26e0}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -122,32 +148,6 @@
       \field{year}{1977}
       \field{pages}{1762}
       \range{pages}{1}
-    \endentry
-    \entry{Ai:2019dqr}{thesis}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=5244c9b17f3e24650df257b0604dcbfa}{%
-           family={Ai},
-           familyi={A\bibinitperiod},
-           given={Wen-Yuan},
-           giveni={W\bibinithyphendelim Y\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{5244c9b17f3e24650df257b0604dcbfa}
-      \strng{fullhash}{5244c9b17f3e24650df257b0604dcbfa}
-      \strng{bibnamehash}{5244c9b17f3e24650df257b0604dcbfa}
-      \strng{authorbibnamehash}{5244c9b17f3e24650df257b0604dcbfa}
-      \strng{authornamehash}{5244c9b17f3e24650df257b0604dcbfa}
-      \strng{authorfullhash}{5244c9b17f3e24650df257b0604dcbfa}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Aspects of false vacuum decay}}
-      \field{type}{phdthesis}
-      \field{year}{2019}
     \endentry
     \entry{andreassen2017precision}{article}{}
       \name{author}{4}{}{%
@@ -414,6 +414,89 @@
       \field{title}{Field Theory: A Path Integral Approach}
       \field{year}{2006}
     \endentry
+    \entry{lee2005fate}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=1,uniquepart=given,hash=4bfcf1695f196f34b07ea3c9d8e8a427}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Wonwoo},
+           giveni={W\bibinitperiod},
+           givenun=1}}%
+        {{uniquename=1,uniquepart=given,hash=3ec0cf40b76e07427ab19358c81646b7}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Chul\bibnamedelima H},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific}%
+      }
+      \strng{namehash}{bae22c6fa551de208d2673922075cebf}
+      \strng{fullhash}{bae22c6fa551de208d2673922075cebf}
+      \strng{bibnamehash}{bae22c6fa551de208d2673922075cebf}
+      \strng{authorbibnamehash}{bae22c6fa551de208d2673922075cebf}
+      \strng{authornamehash}{bae22c6fa551de208d2673922075cebf}
+      \strng{authorfullhash}{bae22c6fa551de208d2673922075cebf}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Modern Physics D}
+      \field{number}{06}
+      \field{title}{The fate of the false vacuum in Einstein gravity theory with nonminimally-coupled scalar field}
+      \field{volume}{14}
+      \field{year}{2005}
+      \field{pages}{1063\bibrangedash 1073}
+      \range{pages}{11}
+    \endentry
+    \entry{coleman1978action}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=482d8709754f85ef0a09f447888369c7}{%
+           family={Coleman},
+           familyi={C\bibinitperiod},
+           given={Sidney},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=25935a761bcd55632beaf2967fba0326}{%
+           family={Glaser},
+           familyi={G\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=254d69811ba0dd7d53445a03fd956d6c}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Andre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{215ef6ed402dd31ca944e017f7925b53}
+      \strng{fullhash}{fb6f57fa312789dfc5fa58d6749cd8dd}
+      \strng{bibnamehash}{fb6f57fa312789dfc5fa58d6749cd8dd}
+      \strng{authorbibnamehash}{fb6f57fa312789dfc5fa58d6749cd8dd}
+      \strng{authornamehash}{215ef6ed402dd31ca944e017f7925b53}
+      \strng{authorfullhash}{fb6f57fa312789dfc5fa58d6749cd8dd}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications in Mathematical Physics}
+      \field{number}{2}
+      \field{title}{Action minima among solutions to a class of Euclidean scalar field equations}
+      \field{volume}{58}
+      \field{year}{1978}
+      \field{pages}{211\bibrangedash 221}
+      \range{pages}{11}
+    \endentry
     \entry{coleman1988quantum}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=482d8709754f85ef0a09f447888369c7}{%
@@ -432,8 +515,8 @@
       \strng{authorbibnamehash}{482d8709754f85ef0a09f447888369c7}
       \strng{authornamehash}{482d8709754f85ef0a09f447888369c7}
       \strng{authorfullhash}{482d8709754f85ef0a09f447888369c7}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
