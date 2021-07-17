@@ -1,4 +1,4 @@
-\chapter{Decaimiento del falso vacío en la Mecánica Cuántica} 
+\chapter{Decaimiento del falso vacío en la Mecánica Cuántica} \label{cap:falso_vacio_qm}
 
 %\section{Tunelamiento y aproximación WKB}
 
@@ -104,7 +104,7 @@ Una de las dificultades al momento de querer calcular \eqref{eq:amplitud} se deb
 \end{equation} 
 también conocido como rotación de Wick \cite{das2006field}. %Cabe mencionar que $\tau$ es un parámetro real. 
 
-Aplicando \eqref{eq:tiempo_im} en la acción \eqref{eq:accion}, tenemos
+Realizando el cambio de variable \eqref{eq:tiempo_im} en la acción \eqref{eq:accion}, tenemos
 \begin{align}
 S\qty[x\qty(\tau)] &= \int \dd{\qty(-i\tau)} \qty[ \frac{1}{2} \left(\dv{x}{\qty(-i\tau)}\right)^2 - V(x)] \\
 %&= -i\int \dd{\tau} \qty[ -\frac{1}{2} \left(\dv{x}{\tau}\right)^2 - V\qty(x)] \\ 
@@ -173,9 +173,9 @@ la energía del estado metaestable cuenta con una parte imaginaria, a partir de 
 	\Gamma = 2\Im\qty(\lim_{T \rightarrow \infty} \frac{ \ln I}{T}).
 \end{equation}
 
-\section{Aproximación de punto estacionario}
+\section{Aproximación del punto estacionario}
 
-Los casos para los cuales es posible calcular la integral de camino de manera exacta son muy pocos y suelen involucrar técnicas matemáticas sofisticadas \cite{feynman2010quantum, das2006field, kleinert2009path}, por lo que usualmente se tiene que recurrir a métodos aproximados. En nuestro caso, haremos uso de la aproximación de punto estacionario (\emph{saddle point approximation} 
+Los casos para los cuales es posible calcular la integral de camino de manera exacta son muy pocos y suelen involucrar técnicas matemáticas sofisticadas \cite{feynman2010quantum, das2006field, kleinert2009path}, por lo que usualmente se tiene que recurrir a métodos aproximados. En nuestro caso, haremos uso de la aproximación del punto estacionario (\emph{saddle point approximation} 
 %\footnote{En este trabajo, punto estacionario y punto de silla son sinónimos.}
 ) para calcular la integral de camino euclideana en \eqref{eq:Gamma}. 
 
@@ -214,7 +214,7 @@ donde, al haber fijado el camino clásico, ahora integramos sobre todas sus vari
 \begin{equation}\label{eq:Iaprox2}
 I = e^{-S_E^{\textrm{cl}}/\hbar} \int \mathcal{D}\eta \, e^{-S_E^{(2)} + \order{\hbar}}
 \end{equation}
-notamos que los términos de orden superior en \eqref{eq:approx1} son de primer orden en $\hbar$, justificando la aproximación \cite{paranjape2017theory}. Esta es la razón por lo que la aproximación de punto estacionario es un método semiclásico. Será a este orden que calcularemos la tasa de decaimiento del falso vacío $\Gamma$. 
+notamos que los términos de orden superior en \eqref{eq:approx1} son de primer orden en $\hbar$, justificando la aproximación \cite{paranjape2017theory}. Esta es la razón por lo que la aproximación del punto estacionario es un método semiclásico. Será a este orden que calcularemos la tasa de decaimiento del falso vacío $\Gamma$. 
 
 La derivada funcional de la acción euclideana \eqref{eq:eucliaction} es igual a la ecuación de movimiento \eqref{eq:mov_ec}
 \begin{equation} \label{eq:dev1}
@@ -274,11 +274,11 @@ I &\approx e^{-S_E^{\textrm{cl}}/\hbar} \int \prod_\lambda \frac{\dd{c_\lambda}}
 %\end{equation}
 
 El producto de los autovalores en el último término de \eqref{eq:I_gauss} no es más que la determinante de $\hat{O}$. Con esto, %tenemos finalmente que 
-la amplitud de transición en la aproximación de punto estacionario está dada por
+la amplitud de transición en la aproximación del punto estacionario está dada por
 \begin{equation}\label{eq:Isaddle}
 I = e^{-S_E^{\textrm{cl}} / \hbar} \qty[ \det\left(-\dv[2]{\tau} + V''\qty(x_{\textrm{cl}}) \right) ]^{-1/2} \qty(1 + \order{\hbar}).
 \end{equation}
-Cabe resaltar que esta aproximación es de primer orden en $\hbar$. En caso la acción euclideana posea múltiples puntos estacionarios, debemos sumar la contribución de cada uno.
+Cabe resaltar que esta aproximación es de primer orden en $\hbar$. En caso la acción euclideana cuente con múltiples puntos estacionarios, debemos sumar la contribución de cada uno.
 
 %Notamos que la amplitud consta de un término no perturbativo dado por la exponencial y 
 
@@ -296,7 +296,7 @@ Como veremos en las secciones siguientes, este es el caso para el decaimiento de
 %Como se discutió en la sección inicial de este capítulo, obtendremos la tasa de decaimiento del falso vacío $\Gamma$ a partir de la amplitud $I$ correspondiente. Para esto haremos uso de la ecuación \eqref{eq:Isaddle}, pero antes necesitamos conocer las trayectorias clásicas 
 
 Como se discutió en la sección inicial de este capítulo, la tasa de decaimiento del falso vacío está relacionada con la probabilidad de que una partícula permanezca en la región del falso vacío del potencial. %como los de las figuras \ref{fig:potencial} y \ref{fig:potencial_numerico}. 
-Es por esto que las trayectorias clásicas, necesarias para calcular la amplitud de transición en la aproximación de punto estacionario usando la ecuación \eqref{eq:Isaddle}, deben empezar y terminar en dicha región. Es decir, $x_i = x_f = x_+$. 
+Es por esto que las trayectorias clásicas, necesarias para calcular la amplitud de transición en la aproximación del punto estacionario usando la ecuación \eqref{eq:Isaddle}, deben empezar y terminar en dicha región. Es decir, $x_i = x_f = x_+$. 
 %Al momento de realizar la aproximación de punto estacionario, consideramos que la partícula va de la posición inicial a la final en un intervalo de tiempo euclideano $T$ finito. Sin embargo, %puesto que obtendremos $\Gamma$ a partir de la ecuación \eqref{eq:Gamma}, 
 %estamos interesados en el límite $T \rightarrow \infty$ 
 %Además, estamos interesados en el límite en el que el intervalo de tiem po euclideano $T$ se hace infinito \cite{coleman1977fate}. 
@@ -389,7 +389,7 @@ y hacemos $\tau \rightarrow -\tau$ en la segunda integral, ambos términos son i
 %\begin{equation}\label{eq:S_B2}
 %S_E\qty[x_B\qty(\tau)] =  2\int_{-\infty}^{0} \dd{\tau} \qty[ \frac{1}{2}\qty(\dv{x_B}{\tau})^2 + V\qty(x_B) ].
 %\end{equation}
-Esto es una consecuencia directa de la invariancia de la acción euclideana ante inversiones temporales, relacionada también con la simetría del bounce. Si además usamos \eqref{eq:K=V}, podemos reducir \eqref{eq:S_B1} a
+Esto es una consecuencia directa de la invariancia de la acción euclideana ante inversiones temporales, relacionada también con la simetría del bounce. Si además usamos la ecuación \eqref{eq:K=V}, podemos reducir la acción \eqref{eq:S_B1} a
 \begin{equation} \label{eq:S_B3}
 S_E\qty[x_B\qty(\tau)] = 2\int_{-\infty}^{0} \dd{\tau} 2 V\qty(x_B).
 \end{equation}
@@ -397,13 +397,15 @@ S_E\qty[x_B\qty(\tau)] = 2\int_{-\infty}^{0} \dd{\tau} 2 V\qty(x_B).
 %\begin{equation}\label{eq:S_B4}
 %B =  \int_{-\infty}^{0} \dd{\tau} 2 V\qty(x_B) + \int_{0}^{+\infty}   \dd{\tau} 2 V\qty(x_B)
 %\end{equation}
-Por último, realicemos el cambio variable $\tau \rightarrow x_B$ \cite{rubakov2009classical}. Despejando $\text{d}x_B/\text{d}\tau$ en \eqref{eq:K=V}, %obtenemos $\dd{\tau}$ en función de $\dd{x_B}$, 
+Por último, realicemos el cambio variable $\tau \rightarrow x_B$ \cite{rubakov2009classical}. Despejando $\text{d}x_B/\text{d}\tau$ en la ecuación \eqref{eq:K=V}, %obtenemos $\dd{\tau}$ en función de $\dd{x_B}$, 
 \begin{align}
 \dv{x_B}{\tau} &= \sqrt{2V\qty(x_B)} \\  \label{eq:dtau}
 \dd{\tau} &= \frac{\dd{x_B}}{\sqrt{2V(x_B)}}.
 \end{align}
 %Los nuevos límites de integración son a su vez,  
-Reemplazando \eqref{eq:dtau} en \eqref{eq:S_B3} con los límites de integración correspondientes,
+Reemplazando esta última %expresi+on
+%\eqref{eq:dtau} 
+en la ecuación \eqref{eq:S_B3} con los límites de integración correspondientes,
 \begin{equation}
 x_B\qty(-\infty) = x_+, \quad x_B\qty(0) = p,
 \end{equation}
@@ -420,7 +422,7 @@ donde hemos omitido el subíndice al ya no ser necesario. Notamos que la acción
 %\colorbox{yellow}{mejorar redaccion}
  
 %A diferencia de lo que tuvimos con la solución trivial, 
-Al momento de calcular la contribución del bounce a la amplitud de transición, no podemos hacer uso de \eqref{eq:Isaddle} directamente debido a que, en este caso, $\hat{O}$ cuenta con autovalores que no son positivos. En las secciones a continuación, se discutirán las complicaciones que esto conlleva y cómo solucionarlas. 
+Al momento de calcular la contribución del bounce a la amplitud de transición, no podemos hacer uso de la fórmula en \eqref{eq:Isaddle} directamente debido a que, en este caso, $\hat{O}$ cuenta con autovalores que no son positivos. En las secciones a continuación, se discutirán las complicaciones que esto conlleva y cómo solucionarlas. 
 %En las secciones a continuación exploraremos dichas dificultades y como resolverlas. %que el cero es un autovalor de $\hat{A}$ y además posee uno negativo. Este último es el que contribuirá con la parte imaginaria de la energía necesaria para obtener $\Gamma$. \colorbox{yellow}{mejorar redaccion}
 
 \subsection{Modo cero} \label{sec:modo_zero}
@@ -540,7 +542,7 @@ Con esto, e integrando sobre el intervalo de tiempo euclideano finito $\tau_0 \i
 \begin{align}
 	I_1 &= e^{-B/\hbar} \int_{-T/2}^{T/2} \dd{\tau_0}\qty(\frac{B}{2\pi \hbar})^{1/2} \prod_{\lambda \neq 0} \int  \frac{\dd{c_\lambda}}{\sqrt{2\pi \hbar}} e^{-\lambda c_\lambda^2/2\hbar}  \\
 	%&= N\qty(\frac{B}{2\pi \hbar})^{1/2} \qty[ \text{det}'\left(-\dv[2]{\tau} + V''\qty(x_B) \right) ]^{-1/2} Te^{-B/\hbar}
-	&= T\qty(\frac{B}{2\pi \hbar})^{1/2} e^{-B/\hbar}  \prod_{\lambda \neq 0} \int \frac{\dd{c_\lambda}}{\sqrt{2\pi \hbar}} e^{-\lambda c_\lambda^2/2\hbar},
+	&=\qty(\frac{B}{2\pi \hbar})^{1/2}  Te^{-B/\hbar}  \prod_{\lambda \neq 0} \int \frac{\dd{c_\lambda}}{\sqrt{2\pi \hbar}} e^{-\lambda c_\lambda^2/2\hbar},
 \end{align}
 %donde la prima en la determinante significa que solo consideramos los autovalores positivos. Incluimos el subíndice para indicar que corresponde a la contribución de un único bounce. 
 hemos resuelto el problema de la divergencia relacionada a la existencia del modo cero. Sin embargo, aún no podemos terminar con el cálculo debido a que existe otra fuente de divergencia aún más grave: $\hat{O}$ cuenta con un autovalor negativo en su espectro, el cual se discutirá en la sección a continuación.  
@@ -568,7 +570,7 @@ por lo que la contribución del bounce a la amplitud de transición está dada p
 \begin{equation} \label{eq:I_bounce}
 I_1 =  \frac{i}{2}  \left( \frac{B}{2\pi \hbar} \right)^{1/2}  \left[ \textrm{det}' \left(-\dv[2]{}{\tau} + V''\qty(x_B) \right)\right]^{-1/2} T e^{-B/\hbar}
 \end{equation}
-donde la prima en la determinante indica que no se considera el autovalor igual a cero. 
+donde la prima en la determinante indica que se ha excluido el autovalor igual a cero. 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.2]{FIGURAS/contorno}
@@ -588,10 +590,10 @@ en función de $I_0$,
 	I_1 = iKTe^{-B/\hbar}I_0
 \end{equation}
 donde hemos definido 
- \begin{equation}
+\begin{equation}
 K \equiv \frac{1}{2} \left(\frac{B}{2\pi\hbar}\right)^{1/2} \left[ \frac{\textrm{det}' \left(-\dv[2]{}{\tau} + V''(x_B) \right)}{\det \left(-\dv[2]{}{\tau} + \omega^2 \right)}\right]^{-1/2}.
 \end{equation}
-De esta forma justificamos la elección de los subíndices puesto que estos señalan el número de bounces que contiene la trayectoria. 
+por comodidad. De esta forma la elección  de los subíndices queda justificada puesto que indican el número de bounces con los que cuenta una trayectoria dada. 
 
 Generalizando \eqref{eq:I1_I0}, tenemos que la contribución de una trayectoria que cuenta con $n$ bounces a la amplitud de transición $I_n$ está dada por
 \begin{equation} \label{eq:I_n}
@@ -599,7 +601,7 @@ I_n = \frac{\left(iKTe^{-B/\hbar}\right)^n}{n!} I_0
 \end{equation}
 donde incluimos el factor de $n!$ debido a que los bounces son equivalentes y por lo tanto intercambiables entre sí. 
 
-Con esto, solo queda sumar todas las contribuciones a la amplitud de transición
+Con esto, solo nos queda sumar cada una de las contribuciones a la amplitud de transición,
 % de tal manera que esta está dada por
 \begin{align}
 	I &= \sum_{n = 0}^{\infty} I_n \\
@@ -611,12 +613,16 @@ y reemplazarlo en la ecuación \eqref{eq:Gamma}
 	\Gamma &= 2\Im\qty(\lim_{T \rightarrow \infty} \frac{ \ln \qty(I_0 \exp\qty(iKTe^{-B/\hbar}))}{T}) \\
 	&= 2 \Im \qty(\lim_{T \rightarrow \infty} \qty( \frac{\ln I_0}{T} + iKe^{-B/\hbar})) \\
 	%&= 2 \Im \qty(iKe^{-B/\hbar}) \\
-	&= 2 Ke^{-B/\hbar}
+	&= 2 Ke^{-B/\hbar},
 \end{align}
-de donde obtenemos finalmente que la tasa de decaimiento del falso vacío a primer orden en $\hbar$ está dado por
+de donde obtenemos finalmente que la tasa de decaimiento del falso vacío a primer orden en $\hbar$ está dada por
 \begin{equation} \label{eq:gamma_final}
 \Gamma = \left(\frac{B}{2\pi\hbar}\right)^{1/2}  \left[ \frac{\textrm{det}' \left(-\dv[2]{}{\tau} + V''(x_B) \right)}{\det \left(-\dv[2]{}{\tau} + \omega^2 \right)} \right]^{-1/2}e^{-B/\hbar}\left( 1 + \mathcal{O}(\hbar)\right).
 \end{equation}
-Notamos que \eqref{eq:gamma_final} es de la misma forma que \eqref{eq:gamma_WKB}, tal como esperábamos. Contamos ahora con una expresión analítica para la constante $A$ que, junto con la exponencial, representan el carácter no perturbativo del decaimiento del falso vacío \cite{weinberg2012classical}.  
+Notamos que la expresión anterior
+%en \eqref{eq:gamma_final} 
+es de la forma dada en la ecuación \eqref{eq:gamma_WKB},
+% que hubiéramos encontrado al usar la aproximación WKB dada en la ecuación
+tal como esperábamos. Contamos ahora con una expresión analítica para la constante $A$ que, junto con la exponencial, representan el carácter no perturbativo del decaimiento del falso vacío \cite{weinberg2012classical}.  
 
 
