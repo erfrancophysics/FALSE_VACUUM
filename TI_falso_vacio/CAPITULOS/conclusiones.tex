@@ -1,5 +1,30 @@
 \chapter{Conclusiones}
 
-Si bien hemos podido calcular la tasa de decaimiento $\Gamma$ para el decaimiento del falso vacío, quedan varias preguntas conceptuales que no podrán ser abordadas en este trabajo de investigación y que tampoco se discuten a profundidad en la literatura consultada. Por ejemplo, la hermiticidad 
+Una partícula cuántica que se encuentra en un potencial que cuenta con un falso vacío, tiene cierta probabilidad de decaer al verdadero vacío. A partir de esta probabilidad definimos la tasa de decaimiento del falso vacío $\Gamma$, dada por
+\begin{equation} 
+\Gamma = 2\Im\qty(\lim_{T \rightarrow \infty} \frac{ \ln I}{T}).
+\end{equation}
+donde $I$ es la integral de camino euclideana
+\begin{equation}
+I = \bra{x_f}e^{-HT/\hbar}\ket{x_i} = \int \mathcal{D}x \, e^{-S_E\qty[x\qty(\tau)]/\hbar}.
+\end{equation}
+Para calcular la integral de camino euclideana se hizo uso de la aproximación del punto estacionario en el que expandimos la acción euclideana alrededor de la trayectoria clásica, obteniendo
+\begin{equation} \label{eq:I_conclu}
+I = e^{-S_E^{\textrm{cl}} / \hbar} \qty[ \det\left(-\dv[2]{\tau} + V''\qty(x_{\textrm{cl}}) \right) ]^{-1/2} \qty(1 + \order{\hbar}).
+\end{equation}
+
+En el caso del decaimiento del falso vacío en la Mecánica Cuántica, las trayectorias clásicas corresponden a la trivial y al bounce. El bounce es una trayectoria clásica en la que la partícula parte del falso vacío en $\tau = -\infty$, llega al verdadero vacío en $\tau = 0$ y vuelve al falso vacío en $\tau = +\infty$. Al momento de calcular la contribución del bounce a la integral de camino euclideano, notamos que el operador $\qty(-\dv[2]{\tau} + V''\qty(x_{\textrm{cl}}))$ cuenta con un modo cero y uno negativo, los cuales impiden usar la ecuación \eqref{eq:I_conclu} directamente. El modo cero se debe a la simetría del centro del bounce y para solucionarlo se integro sobre este obteniendo un factor adicional igual a la acción euclideana del bounce $B$. La existencia del modo negativo es consecuencia directa del modo cero y para solucionarlo se debe hacer la continuación analítica de la amplitud de transición al plano complejo dando como resultado un factor adicionar de $i/2$. 
+
+Tomando todo esto en cuenta y al sumar todas las contribuciones a la integral de camino, incluyendo las de las trayectorias que cuentan con múltiples bounces, obtenemos una expresión analítica para la tasa de decaimiento del falso vacío
+\begin{equation} 
+\Gamma = \left(\frac{B}{2\pi\hbar}\right)^{1/2}  \left[ \frac{\textrm{det}' \left(-\dv[2]{}{\tau} + V''(x_B) \right)}{\det \left(-\dv[2]{}{\tau} + \omega^2 \right)} \right]^{-1/2}e^{-B/\hbar}\left( 1 + \mathcal{O}(\hbar)\right).
+\end{equation}
+
+Al momento de extender el formalismo anterior a la Teoría Cuántica de Campos del campo escalar la cantidad a calcular es la tasa de decaimiento del falso vacío por unidad de volumen $\Gamma/V$. En el espaciotiempo euclideano, el bounce en este caso consiste en la aparición de burbujas de falso vacío que crecen hasta un cierto radio y luego se vuelve a contraer. Esto lleva a buscar soluciones que posean simetría $O\qty(4)$. En la aproximación de la pared delgada, es decir, cuando la diferencia entre los mínimos es pequeña en comparación en la barrera que los separa, tenemos que el bounce consta de una burbuja cuyo interior se encuentra en el verdadero vacío, separado por una pared delgada del exterior que sigue en el verdadero vacío. Siguiendo el formalismo desarrollado en la Mecánica Cuántica, obtenemos 
+\begin{equation}
+\frac{\Gamma}{V} = \qty(\frac{B}{2\pi\hbar})^2  \qty[ \frac{\textrm{det}' \qty(-\pdv[2]{\tau} -\grad{} + U''\qty(\phi_B) )}{\det \qty(-\pdv[2]{\tau} -\grad{} + \omega^2 )} ]^{-1/2}e^{-B/\hbar}\left( 1 + \mathcal{O}(\hbar)\right),
+\end{equation}
+con la salvedad de que ahora se tienen 4 modos ceros. Al retornar al espaciotiempo de Minkowski tenemos que la burbuja de verdadero vacío crece cada vez más rápido con la velocidad de la pared aproximándose a de la luz. 
+%Si bien hemos podido calcular la tasa de decaimiento $\Gamma$ para el decaimiento del falso vacío, quedan varias preguntas conceptuales que no podrán ser abordadas en este trabajo de investigación y que tampoco se discuten a profundidad en la literatura consultada. Por ejemplo, la hermiticidad 
 
 Por último, pero no por eso menos importante, el presente trabajo de investigación representa una pequeña contribución a la literatura en español sobre el decaimiento del falso vacío y espero puede ser utilizada como referencia en investigaciones futuras. 

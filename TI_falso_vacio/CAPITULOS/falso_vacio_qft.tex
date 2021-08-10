@@ -36,8 +36,6 @@ Es por esto que la cantidad físicamente relevante a calcular es la tasa de deca
 % serán discutidas más adelante. 
 donde $A$ y $B$ son coeficientes a determinar mediante la extensión del formalismo desarrollado en el capítulo anterior a la Teoría Cuántica de Campos del campo escalar. 
 
-
-
 \section{Bounces en la Teoría Cuántica de Campos}
 
 %Habiendo desarrollado el formalismo 
@@ -53,7 +51,7 @@ Al aplicar el cambio de variable a tiempo imaginario \eqref{eq:tiempo_im} en la 
 } 
 y su acción euclideana $S_E\qty[\phi\qty(\tau, \vb{x})]$ está dada por
 \begin{equation}
-S_E\qty[\phi\qty(\tau, \vb{x})] = \int \dd{\tau} \dd[3]{x} \qty[\frac{1}{2}\qty(\pdv{\phi}{\tau})^2 + \frac{1}{2}\qty(\grad{\phi})^2 + U\qty(\phi)]
+S_E\qty[\phi\qty(\vb{x}, \tau)] = \int \dd{\tau} \dd[3]{x} \qty[\frac{1}{2}\qty(\pdv{\phi}{\tau})^2 + \frac{1}{2}\qty(\grad{\phi})^2 + U\qty(\phi)]
 \end{equation}
 junto con la ecuación de movimiento correspondiente
 \begin{equation} \label{eq:eom_phi}
@@ -124,7 +122,7 @@ Introduzcamos la distancia euclideana
 \begin{equation}
 	\rho^2 \equiv \vb{x}^2 + \tau^2
 \end{equation}
-de tal manera que, de acuerdo con lo establecido anteriormente,  $\phi = \phi\qty(\rho)$. 
+de tal manera que, de acuerdo con lo establecido anteriormente,  $\phi = \phi\qty(\rho = \sqrt{\vb{x}^2 + \tau^2})$. 
 %mientras que \eqref{eq:cond_frontera_qft2},
 %\begin{equation}
 %\eval{\pdv{\phi\qty(\rho)}{\tau}}_{\tau = 0} = 0.
@@ -211,14 +209,169 @@ Con la finalidad de evitar que las soluciones cuenten con una singularidad en el
 	\eval{\dv{\phi}{\rho}}_0 = 0.
 \end{equation}
 
-
-Podemos interpretar la ecuación de movimiento \eqref{eq:eom_rho} como la de una partícula con ``posición'' $\phi$ y ``tiempo'' $\rho$ moviéndose en el potencial $-U\qty(\phi)$ bajo la acción de una fuerza de fricción cuyo coeficiente de amortiguamiento \footnote{Coeficiente de Stokes.} es inversamente proporcional al ``tiempo'' \cite{weinberg2012classical}. 
+Podemos interpretar la ecuación de movimiento \eqref{eq:eom_rho} como la de una partícula con ``posición'' $\phi$ y ``tiempo'' $\rho$ moviéndose en el potencial invertido $-U\qty(\phi)$ bajo la acción de una fuerza de fricción cuyo coeficiente de amortiguamiento \footnote{Coeficiente de Stokes.} es inversamente proporcional al ``tiempo'' \cite{weinberg2012classical}. 
 %analisis clasico de la eom
 Es posible demostrar la existencia de una solución a esta ecuación que satisfaga las condiciones de frontera \eqref{eq:cond_frontera_rho1} y \eqref{eq:cond_frontera_rho2} mediante un argumento \emph{overshoot-undershoot} y la continuidad de las condiciones iniciales  \cite{coleman1977fate}.
 %\colorbox{yellow}{fin revisar}
 %\subsection{Aproximación de la pared delgada}
 %
 %El campo dentro de la burbuja, en realidad corresponde al punto de retorno y no al verdadero vacío \colorbox{yellow}{añadir citacion tesis lee}. 
+
+\section{Aproximación de la pared delgada}
+
+Podemos continuar con el análisis del bounce bajo la suposición de que 
+%la diferencia entre los mínimos del potencial 
+\begin{equation}
+	\epsilon \equiv U\qty(\phi_+) - U\qty(\phi_-)
+\end{equation}
+es pequeño en comparación con la altura de la barrera del potencial. A este régimen se le denomina como la aproximación de la pared delgada (\emph{thin-wall approximation}) debido a que, como veremos más adelante, la burbuja está separada del exterior, que aún se encuentra en el falso vacío, por una pared delgada. 
+
+Consideremos el potencial
+\begin{equation} \label{eq:potencial_tw}
+U\qty(\phi) = U_0\qty(\phi) + \frac{\epsilon}{2a}\qty(\phi - a),
+\end{equation} 
+donde $U_0\qty(\phi)$ es un potencial simétrico
+%\begin{equation}
+%	U_0\qty(-\phi) = U_0\qty(\phi)
+%\end{equation}
+que cuenta con dos mínimos iguales en $\phi(\rho) = \pm a$ tal que
+\begin{gather}
+U_0\qty(-\phi) = U_0\qty(\phi) \\
+U_0 \qty(\pm a) = 0 \\
+U'_0 \qty(\pm a) = 0 \\
+U''_0 \qty(\pm a) = \omega^2,
+\end{gather}
+%$U\qty(\phi)$ 
+como se muestra en la figura \ref{fig:pareddelgada}. En este caso, $\phi_+ = -a$ y $\phi_- = a$. 
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.45]{FIGURAS/pared_delgada}
+	\caption{Potencial $U\qty(\phi)$ en la aproximación de la pared delgada \cite{paranjape2017theory}.}
+	\label{fig:pareddelgada}
+\end{figure}
+
+Reemplazando \eqref{eq:potencial_tw} en la ecuación de movimento \eqref{eq:eom_rho},
+\begin{equation} \label{eq:eom_rho_tw1}
+\dv[2]{\phi}{\rho} + \frac{3}{\rho}\dv{\phi}{\rho} = U_0'\qty(\phi) + \frac{\epsilon}{2a}.
+\end{equation}
+Despreciamos el último término por ser de orden $\epsilon$. 
+
+Analizando la ecuación \eqref{eq:eom_rho_tw1} en términos de una partícula moviéndose en el potencial invertido $-U_0'\qty(\phi)$, tenemos que, como la diferencia entre ambos mínimos es tan pequeña, s posible que una partícula que empieza su movimiento en $a$, no cuente con la suficiente ``energía'' para llegar a $-a$ debido a la fuerza de fricción  \cite{Masoumi:2015psa}. Es por esto que, antes de cruzar la barrera para llegar a $-a$, la partícula debe permanecer cerca a $a$ durante un tiempo $\rho \approx R$ lo suficientemente grande, de tal manera que el termino de fricción se vuelva despreciable \cite{weinberg2012classical}. 
+La ecuación \eqref{eq:eom_rho_tw1} se reduce entonces,
+\begin{equation} \label{eq:eom_rho_tw2}
+\dv[2]{\phi}{\rho} = U_0'\qty(\phi).
+\end{equation}
+
+Notamos que la ecuación \eqref{eq:eom_rho_tw2} es de la misma forma que la ecuación de movimiento \eqref{eq:mov_ec}, por lo que podemos hacer uso del hecho de que 
+%la energía euclideana correspondiente es igual a 0, es decir, 
+\begin{equation}
+\qty(\dv{\phi}{\rho})^2 - U_0\qty(\phi) = 0
+\end{equation} 
+para obtener la solución 
+%que cumpla con las condiciones de frontera. 
+%Despejando e integrando obtenemos
+\begin{equation}
+\rho - R = \int_0^{\phi_I \qty(\rho)} \frac{\dd{\phi}}{\sqrt{U_0\qty(\phi)}}
+\end{equation}
+conocida como instanton. A diferencia del bounce, 
+%que también es una solución de esta ecuación 
+ el campo se encuentra en el verdadero vacío cerca al origen. 
+%Para solucionar la ecuación hacemos uso del hecho de que la energía euclideana es igual a 0, es decir, 
+%\begin{equation}
+%\qty(\dv{\phi}{\rho})^2 - U_0\qty(\phi) = 0.
+%\end{equation}
+%Despejando e integrando obtenemos la solución
+%\begin{equation}
+%\rho - R = \int_0^{\phi_{\text{TW}}} \frac{\dd{\phi}}{\sqrt{U_0\qty(\phi)}}.
+%\end{equation}
+Tenemos entonces que, de acuerdo con las condiciones de frontera y la discusión realizada anteriormente, 
+%sabemos que cerca al origen,
+%cerca al origen 
+%$\phi = \phi_{\text{TV}}$ mientras que para $r >> R$,
+%lejos de este 
+%$\phi = \phi_{\text{TV}}$. Juntando todo esto 
+el bounce en la aproximación de la pared delgada está dado por
+\begin{equation} \label{eq:bounce_tw}
+\phi_B \qty(\rho) = \begin{cases}
+%\phi_{\text{TV}} =
+-a & 0 < \rho \ll R \\
+\phi_I \qty(\rho) & \rho \approx R \\
+%\phi_{\text{FV}}  =
+a & \rho \gg R
+\end{cases}.
+\end{equation}
+donde $R$ es el radio de la burbuja. 
+
+Como ejemplo explícito consideremos
+\begin{equation}
+U_0\qty(\phi) = \frac{\lambda}{8}\qty(\phi^2 - a^2),
+\end{equation}
+de tal manera que la solución a la ecuación \eqref{eq:eom_rho_tw2} está dada por
+\begin{equation}
+\phi_{\text{TW}}\qty(\rho) = a\tanh(\frac{\omega}{2}\qty(\rho - R))
+\end{equation}
+donde $\omega^2 = \lambda^2 a^2$ \cite{das2006field}. En la figura, podemos apreciar que $\phi_{\text{TW}}\qty(\rho)$ presenta el comportamiento esperado, es decir, el campo se encuentra en el verdadero vacío cerca al origen hasta llegar a $\rho \approx R$ donde ocurre la transición al falso vacío. Esta región es una pared delgada que separa a la burbuja del exterior. 
+\begin{figure}[t]
+	\centering
+	\includegraphics[scale=0.3]{FIGURAS/rho_tw}
+	\caption{Bounce en la aproximación de la pared delgada. En la figura $r = \rho$, $\phi_+ = -\varphi_0$ y $\phi_- = \varphi_0$ \cite{rubakov2009classical}}
+	\label{fig:rhotw}
+\end{figure}
+
+La acción euclideana del bounce %en coordenadas esféricas en $O\qty(4)$ %$B = S_E\qty[\phi_B\qty(\rho)]$
+está dada por \cite{rubakov2009classical}
+\begin{equation}
+S_E\qty[\phi_B\qty(\rho)] = 2\pi^2 \int_0^{+\infty} \dd{\rho}  \rho^3 \qty[\frac{1}{2}\qty(\pdv{\phi_B}{\rho})^2 + U\qty(\phi_B)].
+\end{equation}
+En la aproximación de la pared delgada,
+%el bounce es de la forma dada en la ecuación \eqref{eq:bounce_tw} por lo que debemos calcular la integral en cada 
+\begin{align}
+S_E\qty[\phi_B\qty(\rho)] &= 2\pi^2  \left( \int_0^{R - \Delta R/2} \dd{\rho}  \rho^3 U\qty(-a) +  \int_{R - \Delta R/2}^{R+\Delta R/2} \dd{\rho}  \rho^3 \qty[\frac{1}{2}\qty(\pdv{\phi_I}{\rho})^2 + U\qty(\phi_I)] \right. \\
+&\phantom{= 2\pi^2 \left( \right. } \quad  \left. + \int_{R+\Delta R/2}^{+\infty} \dd{\rho}  \rho^3 U\qty(a) \right)
+\end{align}
+donde $\Delta R$ es el ancho de la pared tal que $R \gg \Delta R$. 
+%Cada integral representa la contribución de cada región del 
+
+Calculamos cada integral por separado. Como $U\qty(-a) = -\epsilon$, %la contribución del interior de la burbuja está dada por 
+\begin{equation}
+ \int_0^{R - \Delta R/2} \dd{\rho}  \rho^3 U\qty(-a) 
+%-\frac{\epsilon}{2} \int_0^{R - \Delta\rho} \dd{\rho} \rho^3 \\
+%-\epsilon \qty[\frac{\rho^4}{4}]_0^{R - \Delta R} \\
+\approx -\frac{1}{4} R^4 \epsilon, %+ \order{\Delta\rho},
+\end{equation}
+donde ignoramos los términos del orden $\Delta R$, mientras que la última integral se anula debido a que $ U\qty(a) = 0$. En la segunda integral, $\rho \approx R$ por lo que
+%se mantiene prácticamente constante cerca a la barrera, por lo que podemos considerarla igual a $R$ y sacarla de la integral %De la figura \ref{fig:rhotw}
+\begin{equation}
+\int_{R - \Delta R/2}^{R+\Delta R/2} \dd{\rho}  \rho^3 \qty[\frac{1}{2}\qty(\pdv{\phi_I}{\rho})^2 + U\qty(\phi_I)] \approx R^3 \int_{R - \Delta R/2}^{R+\Delta R/2} \dd{\rho} \qty[\frac{1}{2}\qty(\pdv{\phi_I}{\rho})^2 + U\qty(\phi_I)] 
+\end{equation}
+La integral del potencial $U\qty(\phi_I)$ se reduce a  %$\epsilon\qty(\phi - a)/2a$ se anula debido a que $\phi_{\text{TW}}\qty(\rho)$ es antisimétrica como se puede
+\begin{align}
+\int_{R - \Delta R/2}^{R+\Delta R/2} \dd{\rho}  U\qty(\phi_I) &= \int_{R - \Delta R/2}^{R+\Delta R/2} \dd{\rho} U_0\qty(\phi) + \frac{\epsilon}{2a}\qty(\int_{R - \Delta R/2}^{R+\Delta R/2} \dd{\rho}\phi\qty(\rho) - \int_{R - \Delta R/2}^{R+\Delta R/2} \dd{\rho}) \\ 
+%&= \int_{R - \Delta R/2}^{R+\Delta R/2} \dd{\rho} U_0\qty(\phi) + \frac{1}{2}\epsilon\Delta R \\
+&\approx \int_{R - \Delta R/2}^{R+\Delta R/2} \dd{\rho} U_0\qty(\phi)
+\end{align}
+donde la segunda integral se anula debido a que $\phi_I\qty(\rho)$ es antisimétrica, como se puede apreciar en la figura \ref{fig:rhotw}, mientras que la última se desprecia por ser del orden $\epsilon\Delta R$.
+
+Tomando en cuenta todo lo anterior tenemos que la acción euclideana en la aproximación de la pared delgada está dada por
+\begin{equation}
+	S_E\qty(R) \approx -\frac{1}{2}\pi^2 R^4 \epsilon + 2\pi^2 R^3 S_I
+\end{equation}
+donde 
+\begin{equation}
+	S_I \equiv \int_{R - \Delta R/2}^{R+\Delta R/2} \dd{\rho}  \rho^3 \qty[\frac{1}{2}\qty(\pdv{\phi_I}{\rho})^2 + U_0\qty(\phi_I)].
+\end{equation}
+Como $S_E\qty(R)$ debe ser estacionario,
+\begin{equation}
+	\dv{S_E}{R} = -2\pi^2 R^2 \epsilon + 6\pi^2 R^3 S_I = 0
+\end{equation}
+de donde obtenemos que
+\begin{equation}
+	R = \frac{3S_I}{\epsilon}
+\end{equation}
+por lo que finalmente
+\begin{equation}
+	B = S_E\qty[\phi_B\qty(\rho)] = \frac{27}{2}\frac{\pi^2 S_I^4}{\epsilon^3}.
+\end{equation}
 
 \section{Cálculo de la tasa de decaimiento del falso vacío por unidad de volumen}
 
@@ -243,7 +396,7 @@ Tal como vimos en el capítulo
 %\ref{cap:falso_vacio_qm}
 anterior, las configuraciones clásicas a considerar son la trivial, el bounce o burbuja así como las configuraciones que cuenten con múltiples bounces. Nuevamente volveremos a encontrarnos con los mismo problemas al momento de calcular la contribución del bounce a la amplitud de transición, los cuales tendrán que ser tratadas independientemente. 
 
-De acuerdo con la ecuación \eqref{eq:I_phi}, la contribución de la configuración trivial $\phi_{\text{FV}}$ a la amplitud de transición $I_0$ no es más que
+De acuerdo con la ecuación \eqref{eq:I_phi}, la contribución de la configuración trivial $\phi_{\text{FV}}\qty(\vb{x}, \tau)$ a la amplitud de transición $I_0$ no es más que
 \begin{equation}
 	I_0 = \qty[ \det\qty(-\pdv[2]{\tau} -\grad{} + \omega^2) ]^{-1/2},
 \end{equation}
@@ -253,20 +406,22 @@ I_1 = e^{-B / \hbar} \qty[ \det\qty(-\pdv[2]{\tau} -\grad{} + U''\qty(\phi_B) ) 
 \end{equation}
 donde $B = S[\phi_B\qty(\vb{x}, \tau)]$ es la acción euclideana del bounce. Sin embargo, sabemos que esta expresión no es la correcta puesto que no todos los autovalores del operador
 \begin{equation}
-	\hat{O} = -\pdv[2]{\tau} -\grad{} + U''\qty(\phi_B)
+	\hat{O} \equiv -\pdv[2]{\tau} -\grad{} + U''\qty(\phi_B)
 \end{equation}
 son positivos. 
 
-Las burbujas de falso vacío pueden aparecer en cualquier región del espacio, es decir, son invariantes ante traslaciones espaciales \cite{coleman1977fate}. Además, aunque fijamos el instante en el que el campo llega al punto de retorno en $\tau = 0$, bien podríamos haberlo hecho en cualquier otro instante de tiempo euclideano. Ambas observaciones indican que el bounce es invariante ante traslaciones espaciotemporales en el espaciotiempo euclideano. Esto significa que, al igual que lo que ocurría con el bounce en la Mecánica Cuántica, el operador $\hat{O}$ cuenta con modos ceros 
+Las burbujas pueden aparecer en cualquier región del espacio, es decir, son invariantes ante traslaciones espaciales \cite{coleman1977fate}. Además, aunque fijamos el instante en el que el campo llega al punto de retorno en $\tau = 0$, bien podríamos haberlo hecho en cualquier otro instante de tiempo euclideano. Ambas observaciones indican que el bounce es invariante ante traslaciones espaciotemporales en el espaciotiempo euclideano. Esto significa que, al igual que lo que ocurría con el bounce en la Mecánica Cuántica, el operador $\hat{O}$ cuenta con modos ceros 
 %por lo que su determinante no está bien definida. 
-Nuevamente, esto es un reflejo de la simetría del sistema. 
+Nuevamente, esto es un reflejo de la simetría $O(4)$ del sistema. 
 En esta ocasión, tendremos cuatro modos ceros
 \begin{equation}
-	\phi_0^i\qty(\vb{x}, \tau) = \qty(\frac{B}{2\pi\hbar})^{-1/2}\pdv{\phi_B}{x_i},
+	\phi_{0_i}\qty(\vb{x}, \tau) = \qty(\frac{B}{2\pi\hbar})^{-1/2}\pdv{\phi_B}{x_i},
 \end{equation}
 donde $i = 1, 2, 3, 4$. Al 
 %hacer el cambio de variable de los coeficientes respectivos 
-integrar sobre el centro de la burbuja a lo largo de una cierta región del espaciotiempo euclideano, 
+integrar sobre el centro de la burbuja 
+%a lo largo de una cierta región d
+en el espaciotiempo euclideano, 
 %la contribución del bounce a la amplitud de transición 
 $I_1$ adquiere el siguiente factor
 \begin{equation}
@@ -277,7 +432,7 @@ $I_1$ adquiere el siguiente factor
 Es posible demostrar que el operador $\hat{O}$ cuenta con único modo negativo %en todos los casos de interés 
 \cite{coleman1977fate, coleman1988quantum}. Para solucionar este problema, hacemos la continuación analítica de la integral de camino euclideana \eqref{eq:I_phi} deformando el contorno de integración a la parte superior del plano complejo. Como resultado, $I_1$ obtiene un factor de adicional de $i/2$, por lo que la contribución del bounce a la amplitud de transición es en realidad 
 \begin{equation}
-I_1 = e^{-B / \hbar} \qty(\frac{B}{2\pi\hbar})^{2}VT \qty[ \det'\left(-\pdv[2]{\tau} -\grad{} + U''\qty(\phi_B) \right) ]^{-1/2},
+I_1 = e^{-B / \hbar} \qty(\frac{B}{2\pi\hbar})^{2}VT \qty[ \textrm{det}'\left(-\pdv[2]{\tau} -\grad{} + U''\qty(\phi_B) \right) ]^{-1/2},
 \end{equation}
 donde la prima en la determinante indica que se ha excluido el autovalor igual a cero. 
 
@@ -306,42 +461,37 @@ Analicemos la evolución de una burbuja de verdadero vacío en el espaciotiempo 
 \end{equation}
 debido a que el bounce es la configuración que cuenta con la menor acción euclideana \cite{rubakov2009classical}. Además, 
 \begin{equation} 
-\pdv{\phi}{\tau}\qty(\vb{x}, t = 0) = 0,
+\pdv{\phi}{t}\qty(\vb{x}, t = 0) = 0,
 \end{equation}
-y a partir de este instante, el campo evoluciona de acuerdo con la ecuación de movimiento clásica \cite{callan1977fate}
+y a partir de este instante, el campo evoluciona de acuerdo con la ecuación de movimiento \cite{callan1977fate}
 \begin{equation} \label{eq:eom_minkowski}
 	\qty(\pdv[2]{\tau} - \grad{}^2)\phi\qty(\vb{x}, t) = -U'\qty(\phi\qty(\vb{x}, t)).
 \end{equation}
 Tenemos entonces que en $t = 0$, se materializa una burbuja de verdadero vacío de radio $R$. 
 %Es decir, en $t = 0$, se materializa. 
-Cuando 
-%la diferencia entre los mínimos del potencial 
-$U\qty(\phi_+) - U\qty(\phi_-)$
-es pequeña en comparación con la altura de la barrera de potencial (\emph{thin-wall approximation}), la burbuja está separada del exterior, que aún se encuentra en el falso vacío, por una delgada barrera. 
-
-Para obtener $\phi\qty(\vb{x}, t)$ hacemos el cambio de variable $ \tau = it$ en la ecuación \eqref{eq:rho_xi} para pasar del tiempo euclideano al del espacio de Minkowski. Definamos
-\begin{equation}
-	r^2 \equiv \vb{x}^2 - t^2,
-\end{equation}
-de tal manera que al hacer la continuación analítica del bounce al campo en el espacio de Minkowski tenemos que este último está dado por
-\begin{equation} 
-	\phi\qty(\vb{x}, t) = \phi\qty(r = \sqrt{\vb{x}^2 - t^2}) = \phi_B\qty(\rho = \sqrt{\vb{x}^2 + \tau^2}).
-\end{equation}
-Puesto que $r$ es positivo, esta solución solo está definida fuera del cono de luz. Para obtener la solución dentro del cono de luz habría que resolver la ecuación de movimiento \eqref{eq:eom_minkowski} \cite{weinberg2012classical}. 
-
-La simetría $O(4)$ del bounce se ha convertido entonces en una simetría $O(3, 1)$. Esto significa que la evolución de la burbuja será la misma para cualquier observador inercial \cite{coleman1977fate}. A medida que la burbuja se expande, su pared traza la hiperboloide
-\begin{equation}
-\vb{x}^2 - t^2 = R^2.
-\end{equation}
-tal como se puede apreciar en la figura \eqref{fig:bubblegrowth}. Es decir, la burbuja crece a una velocidad que se aproxima a la velocidad de la luz asintóticamente. Si $R$ es microscópico, del orden de $10^{-10}$, esto es prácticamente instantáneo  de tal manera que si una burbuja se está acercando, no sabremos en qué momento nos golpeó \cite{paranjape2017theory}. Dentro de la burbuja solo queda el verdadero vacío inalterado.
 
 \begin{figure}[t]
 	\centering
-	\includegraphics[scale=0.45]{FIGURAS/bubble_growth}
-	\caption{Crecimiento de una burbuja de verdadero vacío en el espacio de Minkowki. En la figura $r = \qty|\vb{x}|$ \cite{paranjape2017theory}.}
+	\includegraphics[scale=0.35]{FIGURAS/bubble_growth}
+	\caption{Crecimiento de las burbujas de verdadero vacío en el espaciotiempo de Minkowki. En la figura, $\varphi_-$ y $\varphi_0$ corresponden al falso y verdadero vacío respectivamente \cite{rubakov2009classical}.}
 	\label{fig:bubblegrowth}
 \end{figure}
 
+Para obtener $\phi\qty(\vb{x}, t)$ hacemos el cambio de variable $ \tau = it$ en la ecuación \eqref{eq:rho_xi} para pasar del tiempo euclideano al del espaciotiempo de Minkowski. Definamos
+\begin{equation}
+	r^2 \equiv \vb{x}^2 - t^2,
+\end{equation}
+de tal manera que al hacer la continuación analítica del bounce al campo en el espaciotiempo de Minkowski tenemos que este último está dado por
+\begin{equation} 
+	\phi\qty(\vb{x}, t) = \phi_B\qty(r = \sqrt{\vb{x}^2 - t^2}) 
+	%= \phi_B\qty(\rho = \sqrt{\vb{x}^2 + \tau^2}).
+\end{equation}
+Puesto que $r$ es positivo, esta solución solo está definida fuera del cono de luz. Para obtener la solución dentro del cono de luz habría que resolver la ecuación de movimiento \eqref{eq:eom_minkowski} \cite{weinberg2012classical}. 
+La simetría $O(4)$ del bounce se ha convertido entonces en una simetría $O(3, 1)$. Esto significa que la evolución de la burbuja será la misma para cualquier observador inercial \cite{coleman1977fate}. A medida que la burbuja se expande, su pared describe la hiperboloide
+\begin{equation}
+\vb{x}^2 - t^2 = R^2
+\end{equation}
+tal como se puede apreciar en la figura \eqref{fig:bubblegrowth}. Es decir, la burbuja crece a una velocidad que se aproxima a la velocidad de la luz asintóticamente. Si $R$ es microscópico, del orden de $10^{-10}$, esto es prácticamente instantáneo  de tal manera que si una burbuja se está acercando, no sabremos en qué momento nos golpeó \cite{paranjape2017theory}. Dentro de la burbuja solo queda el verdadero vacío inalterado.
 
 %\subsection{Implicaciones cosmológicas}
 

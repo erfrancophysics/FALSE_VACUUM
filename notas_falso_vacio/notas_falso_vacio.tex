@@ -260,6 +260,53 @@ donde la prima en la determinante significa que se ha excluido el autovalor igua
 \item La ocurrencia de los modos cero esta asociado con el hecho de que el centro del bounce puede localizarse en cualquier punto del espaciotiempo euclideano \cite{rubakov2009classical}. 
 \end{itemize}
 
+\subsection{Thin-wall approximation}
+ 
+Consideremos el potencial
+\begin{equation}
+	U\qty(\phi) = U_0\qty(\phi) + \frac{\epsilon}{2a}\qty(\phi - a).
+\end{equation} 
+$ U_0\qty(\phi)$ es un potencial simétrico con 2 mínimos iguales tal que
+\begin{align}
+	U_0\qty(-\phi) &= U_0\qty(\phi) \\
+	U_0 \qty(\pm a) &= 0 \\
+	U'_0 \qty(\pm a) &= 0 \\
+	U''_0 \qty(\pm a) &= \omega^2 
+\end{align}
+En este caso $\phi_{\text{FV}} = -a$ y $\phi_{\text{TV}} = a$
+
+\begin{equation} \label{eq:eom_rho_tw1}
+\dv[2]{\phi}{\rho} + \frac{3}{\rho}\dv{\phi}{\rho} + \frac{\epsilon}{2a} = U'\qty(\phi).
+\end{equation}
+El último término se desprecia debido a que es de orden $\epsilon$. 
+
+Puesto que la diferencia entre los mínimos es tan pequeña, puede que
+una partícula que empiece su movimiento cerca a $a$ no pueda llegar a $-a$ debido al término de fricción. Es por esto que el movimiento debe ocurrir para $\rho = R$ muy grande, de tal manera que el termino de fricción se puede ignorar
+\begin{equation} \label{eq:eom_rho_tw2}
+\dv[2]{\phi}{\rho} = U'\qty(\phi).
+\end{equation}
+Notamos que esta ecuación es de la forma de la ecuación de movimiento del bounce en la Mecánica Cuántica. Para solucionar la ecuación hacemos uso del hecho de que la energía euclideana es igual a 0, es decir, 
+\begin{equation}
+	\qty(\dv{\phi}{\rho})^2 - U\qty(\phi) = 0.
+\end{equation}
+Despejando e integrando obtenemos la solución
+\begin{equation}
+	\rho - R = \int \frac{\dd{\phi}}{\sqrt{U_0\qty(\phi)}}.
+\end{equation}
+
+De acuerdo con las condiciones de frontera y la imagen del bounce construida anteriormente, sabemos que para $r << R $,
+%cerca al origen 
+$\phi = \phi_{\text{TV}}$ mientras que para $r >> R$,
+%lejos de este 
+$\phi = \phi_{\text{TV}}$. Juntando todo esto obtenemos al bounce en la aproximación de la pared delgada
+\begin{equation}
+	\phi_B \qty(\rho) = \begin{cases}
+	\phi_{\text{TV}} & r << R \\
+	\phi \\
+	\phi_{\text{FV}} & r >> R
+	\end{cases}
+\end{equation}
+
 \section{Conclusiones}
 
 \begin{itemize}

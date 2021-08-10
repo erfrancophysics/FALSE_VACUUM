@@ -52,21 +52,33 @@
       \field{pages}{805\bibrangedash 806}
       \range{pages}{2}
     \endentry
-    \entry{Ai:2019dqr}{thesis}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=5244c9b17f3e24650df257b0604dcbfa}{%
-           family={Ai},
-           familyi={A\bibinitperiod},
-           given={Wen-Yuan},
-           giveni={W\bibinithyphendelim Y\bibinitperiod},
+    \entry{Kobzarev:1974cp}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=79e9b547c6499228f4a6e0d904fac0ba}{%
+           family={Kobzarev},
+           familyi={K\bibinitperiod},
+           given={I.Yu.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bd0ad18ecb4bab16aae79f36644dce47}{%
+           family={Okun},
+           familyi={O\bibinitperiod},
+           given={L.B.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=eb633fbf83edc7418ebee9fc736ebd0c}{%
+           family={Voloshin},
+           familyi={V\bibinitperiod},
+           given={M.B.},
+           giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{5244c9b17f3e24650df257b0604dcbfa}
-      \strng{fullhash}{5244c9b17f3e24650df257b0604dcbfa}
-      \strng{bibnamehash}{5244c9b17f3e24650df257b0604dcbfa}
-      \strng{authorbibnamehash}{5244c9b17f3e24650df257b0604dcbfa}
-      \strng{authornamehash}{5244c9b17f3e24650df257b0604dcbfa}
-      \strng{authorfullhash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{namehash}{5136133805232e45552bf40eea4bada7}
+      \strng{fullhash}{cc721dcc34f74a270d56c6f176a1781d}
+      \strng{bibnamehash}{cc721dcc34f74a270d56c6f176a1781d}
+      \strng{authorbibnamehash}{cc721dcc34f74a270d56c6f176a1781d}
+      \strng{authornamehash}{5136133805232e45552bf40eea4bada7}
+      \strng{authorfullhash}{cc721dcc34f74a270d56c6f176a1781d}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
@@ -74,9 +86,12 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{Aspects of false vacuum decay}}
-      \field{type}{phdthesis}
-      \field{year}{2019}
+      \field{journaltitle}{Sov. J. Nucl. Phys.}
+      \field{title}{{Bubbles in Metastable Vacuum}}
+      \field{volume}{20}
+      \field{year}{1975}
+      \field{pages}{644\bibrangedash 646}
+      \range{pages}{3}
     \endentry
     \entry{coleman1977fate}{article}{}
       \name{author}{1}{}{%
@@ -149,6 +164,336 @@
       \field{pages}{1762}
       \range{pages}{1}
     \endentry
+    \entry{coleman1980gravitational}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=482d8709754f85ef0a09f447888369c7}{%
+           family={Coleman},
+           familyi={C\bibinitperiod},
+           given={Sidney},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a9bd1269166538766ba9840a58714d59}{%
+           family={De\bibnamedelima Luccia},
+           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{4f91e8c9e0d31684cac6a7bef54252df}
+      \strng{fullhash}{4f91e8c9e0d31684cac6a7bef54252df}
+      \strng{bibnamehash}{4f91e8c9e0d31684cac6a7bef54252df}
+      \strng{authorbibnamehash}{4f91e8c9e0d31684cac6a7bef54252df}
+      \strng{authornamehash}{4f91e8c9e0d31684cac6a7bef54252df}
+      \strng{authorfullhash}{4f91e8c9e0d31684cac6a7bef54252df}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review D}
+      \field{number}{12}
+      \field{title}{Gravitational effects on and of vacuum decay}
+      \field{volume}{21}
+      \field{year}{1980}
+      \field{pages}{3305}
+      \range{pages}{1}
+    \endentry
+    \entry{guth1981inflationary}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ad620f02075d263d8ae440e1feb4020d}{%
+           family={Guth},
+           familyi={G\bibinitperiod},
+           given={Alan\bibnamedelima H},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{ad620f02075d263d8ae440e1feb4020d}
+      \strng{fullhash}{ad620f02075d263d8ae440e1feb4020d}
+      \strng{bibnamehash}{ad620f02075d263d8ae440e1feb4020d}
+      \strng{authorbibnamehash}{ad620f02075d263d8ae440e1feb4020d}
+      \strng{authornamehash}{ad620f02075d263d8ae440e1feb4020d}
+      \strng{authorfullhash}{ad620f02075d263d8ae440e1feb4020d}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review D}
+      \field{number}{2}
+      \field{title}{Inflationary universe: A possible solution to the horizon and flatness problems}
+      \field{volume}{23}
+      \field{year}{1981}
+      \field{pages}{347}
+      \range{pages}{1}
+    \endentry
+    \entry{hawking1982supercooled}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=54f782bf80440d0499a81961bd182c52}{%
+           family={Hawking},
+           familyi={H\bibinitperiod},
+           given={Stephen\bibnamedelima William},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=aace6845e21d602b6d806853f17261ad}{%
+           family={Moss},
+           familyi={M\bibinitperiod},
+           given={Ian\bibnamedelima L},
+           giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{247d911cbc8ce53536774a5feb601020}
+      \strng{fullhash}{247d911cbc8ce53536774a5feb601020}
+      \strng{bibnamehash}{247d911cbc8ce53536774a5feb601020}
+      \strng{authorbibnamehash}{247d911cbc8ce53536774a5feb601020}
+      \strng{authornamehash}{247d911cbc8ce53536774a5feb601020}
+      \strng{authorfullhash}{247d911cbc8ce53536774a5feb601020}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics Letters B}
+      \field{number}{1}
+      \field{title}{Supercooled phase transitions in the very early universe}
+      \field{volume}{110}
+      \field{year}{1982}
+      \field{pages}{35\bibrangedash 38}
+      \range{pages}{4}
+    \endentry
+    \entry{hawking1998open}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=54f782bf80440d0499a81961bd182c52}{%
+           family={Hawking},
+           familyi={H\bibinitperiod},
+           given={Stephen\bibnamedelima William},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9552dd787a2b62d4775c3fae5f014fda}{%
+           family={Turok},
+           familyi={T\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{d3c9fd7013e17348ba752baf4a51275a}
+      \strng{fullhash}{d3c9fd7013e17348ba752baf4a51275a}
+      \strng{bibnamehash}{d3c9fd7013e17348ba752baf4a51275a}
+      \strng{authorbibnamehash}{d3c9fd7013e17348ba752baf4a51275a}
+      \strng{authornamehash}{d3c9fd7013e17348ba752baf4a51275a}
+      \strng{authorfullhash}{d3c9fd7013e17348ba752baf4a51275a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics Letters B}
+      \field{number}{1-2}
+      \field{title}{Open inflation without false vacua}
+      \field{volume}{425}
+      \field{year}{1998}
+      \field{pages}{25\bibrangedash 32}
+      \range{pages}{8}
+    \endentry
+    \entry{hackworth2005oscillating}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=4f2101a1836797a68ae5dfc13b63e5ef}{%
+           family={Hackworth},
+           familyi={H\bibinitperiod},
+           given={James\bibnamedelima C},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=834e49d190d73f6e582eefbc082a837e}{%
+           family={Weinberg},
+           familyi={W\bibinitperiod},
+           given={Erick\bibnamedelima J},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{b56434227b15806e0f682ace1f94aea4}
+      \strng{fullhash}{b56434227b15806e0f682ace1f94aea4}
+      \strng{bibnamehash}{b56434227b15806e0f682ace1f94aea4}
+      \strng{authorbibnamehash}{b56434227b15806e0f682ace1f94aea4}
+      \strng{authornamehash}{b56434227b15806e0f682ace1f94aea4}
+      \strng{authorfullhash}{b56434227b15806e0f682ace1f94aea4}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review D}
+      \field{number}{4}
+      \field{title}{Oscillating bounce solutions and vacuum tunneling in de Sitter spacetime}
+      \field{volume}{71}
+      \field{year}{2005}
+      \field{pages}{044014}
+      \range{pages}{1}
+    \endentry
+    \entry{guth2007eternal}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ad620f02075d263d8ae440e1feb4020d}{%
+           family={Guth},
+           familyi={G\bibinitperiod},
+           given={Alan\bibnamedelima H},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{ad620f02075d263d8ae440e1feb4020d}
+      \strng{fullhash}{ad620f02075d263d8ae440e1feb4020d}
+      \strng{bibnamehash}{ad620f02075d263d8ae440e1feb4020d}
+      \strng{authorbibnamehash}{ad620f02075d263d8ae440e1feb4020d}
+      \strng{authornamehash}{ad620f02075d263d8ae440e1feb4020d}
+      \strng{authorfullhash}{ad620f02075d263d8ae440e1feb4020d}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physics A: Mathematical and Theoretical}
+      \field{number}{25}
+      \field{title}{Eternal inflation and its implications}
+      \field{volume}{40}
+      \field{year}{2007}
+      \field{pages}{6811}
+      \range{pages}{1}
+    \endentry
+    \entry{bass2021higgs}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=d48b56c18bec3131fd1f675dc7d928d5}{%
+           family={Bass},
+           familyi={B\bibinitperiod},
+           given={Steven\bibnamedelima D},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a8e28d4916a479ca08f5a9ef476231e0}{%
+           family={De\bibnamedelima Roeck},
+           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1e1ac025dd98de9e4dc9686c3fc54f39}{%
+           family={Kado},
+           familyi={K\bibinitperiod},
+           given={Marumi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{51fb2e3329c18777ad4f0528d48323b6}
+      \strng{fullhash}{d53e60b521065157c1a1cd13860390c5}
+      \strng{bibnamehash}{d53e60b521065157c1a1cd13860390c5}
+      \strng{authorbibnamehash}{d53e60b521065157c1a1cd13860390c5}
+      \strng{authornamehash}{51fb2e3329c18777ad4f0528d48323b6}
+      \strng{authorfullhash}{d53e60b521065157c1a1cd13860390c5}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Reviews Physics}
+      \field{title}{The Higgs boson implications and prospects for future discoveries}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+    \endentry
+    \entry{andreassen2018scale}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=19eb4598c442052496e59507827ef2b2}{%
+           family={Andreassen},
+           familyi={A\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d4f2e14116194314c993a3eaaca193dc}{%
+           family={Frost},
+           familyi={F\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3179169c1aced94be226c750220562b1}{%
+           family={Schwartz},
+           familyi={S\bibinitperiod},
+           given={Matthew\bibnamedelima D},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{5a9bd8c1e56a632b8e6e9feb5af4c8e4}
+      \strng{fullhash}{21f27d2f0db30ba0d8571428bf7ed96f}
+      \strng{bibnamehash}{21f27d2f0db30ba0d8571428bf7ed96f}
+      \strng{authorbibnamehash}{21f27d2f0db30ba0d8571428bf7ed96f}
+      \strng{authornamehash}{5a9bd8c1e56a632b8e6e9feb5af4c8e4}
+      \strng{authorfullhash}{21f27d2f0db30ba0d8571428bf7ed96f}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review D}
+      \field{number}{5}
+      \field{title}{Scale-invariant instantons and the complete lifetime of the standard model}
+      \field{volume}{97}
+      \field{year}{2018}
+      \field{pages}{056006}
+      \range{pages}{1}
+    \endentry
+    \entry{Ai:2019dqr}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=5244c9b17f3e24650df257b0604dcbfa}{%
+           family={Ai},
+           familyi={A\bibinitperiod},
+           given={Wen-Yuan},
+           giveni={W\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{fullhash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{bibnamehash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{authorbibnamehash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{authornamehash}{5244c9b17f3e24650df257b0604dcbfa}
+      \strng{authorfullhash}{5244c9b17f3e24650df257b0604dcbfa}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Aspects of false vacuum decay}}
+      \field{type}{phdthesis}
+      \field{year}{2019}
+    \endentry
     \entry{andreassen2017precision}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,uniquepart=base,hash=19eb4598c442052496e59507827ef2b2}{%
@@ -185,11 +530,10 @@
       \strng{authorbibnamehash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
       \strng{authornamehash}{5a9bd8c1e56a632b8e6e9feb5af4c8e4}
       \strng{authorfullhash}{b963f1e967bbf5eb58f9ddaf17a85e7c}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review D}
@@ -218,8 +562,8 @@
       \strng{authorbibnamehash}{834e49d190d73f6e582eefbc082a837e}
       \strng{authornamehash}{834e49d190d73f6e582eefbc082a837e}
       \strng{authorfullhash}{834e49d190d73f6e582eefbc082a837e}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -246,8 +590,8 @@
       \strng{authorbibnamehash}{06528b4cf51595378ecb7bfedc0efa8b}
       \strng{authornamehash}{06528b4cf51595378ecb7bfedc0efa8b}
       \strng{authorfullhash}{06528b4cf51595378ecb7bfedc0efa8b}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -274,8 +618,8 @@
       \strng{authorbibnamehash}{61b7580d70058c032f02ed6067cc3483}
       \strng{authornamehash}{61b7580d70058c032f02ed6067cc3483}
       \strng{authorfullhash}{61b7580d70058c032f02ed6067cc3483}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -302,8 +646,8 @@
       \strng{authorbibnamehash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
       \strng{authornamehash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
       \strng{authorfullhash}{f0a1b7e97eb45d3f029bfa9be29a49ed}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -327,8 +671,8 @@
       \strng{authorbibnamehash}{7e9c32b413cf8eca230fea08a7856790}
       \strng{authornamehash}{7e9c32b413cf8eca230fea08a7856790}
       \strng{authorfullhash}{7e9c32b413cf8eca230fea08a7856790}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -373,8 +717,8 @@
       \strng{authorbibnamehash}{b06e378c2e75d98675eae04150562b9b}
       \strng{authornamehash}{257888b7cf1dd98859fb387e87e745f1}
       \strng{authorfullhash}{b06e378c2e75d98675eae04150562b9b}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -401,8 +745,8 @@
       \strng{authorbibnamehash}{2bc3fb1446b01bc264bb7e1399ba9021}
       \strng{authornamehash}{2bc3fb1446b01bc264bb7e1399ba9021}
       \strng{authorfullhash}{2bc3fb1446b01bc264bb7e1399ba9021}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -438,8 +782,8 @@
       \strng{authorbibnamehash}{bae22c6fa551de208d2673922075cebf}
       \strng{authornamehash}{bae22c6fa551de208d2673922075cebf}
       \strng{authorfullhash}{bae22c6fa551de208d2673922075cebf}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -483,8 +827,8 @@
       \strng{authorbibnamehash}{fb6f57fa312789dfc5fa58d6749cd8dd}
       \strng{authornamehash}{215ef6ed402dd31ca944e017f7925b53}
       \strng{authorfullhash}{fb6f57fa312789dfc5fa58d6749cd8dd}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -515,8 +859,8 @@
       \strng{authorbibnamehash}{482d8709754f85ef0a09f447888369c7}
       \strng{authornamehash}{482d8709754f85ef0a09f447888369c7}
       \strng{authorfullhash}{482d8709754f85ef0a09f447888369c7}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
